@@ -25,5 +25,5 @@ purpose.
 
 Unless otherwise is specified, the source text files are
 licensed with a [Creative Commons CC BY 4.0
-International](https://github.com/datarama-dk/datarama.dk/LICENSE.md)
+International](https://github.com/datarama-dk/datarama.dk/blob/master/LICENSE.md)
 license.
