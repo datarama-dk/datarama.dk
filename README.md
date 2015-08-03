@@ -24,6 +24,6 @@ Scheme-based custom static HTML generator I wrote for the
 purpose.
 
 Unless otherwise is specified, the source text files are
-licensed with a [Creative Commons CC4.0-BY
+licensed with a [Creative Commons CC BY 4.0
 International](https://github.com/datarama-dk/datarama.dk/LICENSE.md)
 license.
