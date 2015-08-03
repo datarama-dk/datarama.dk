@@ -1,0 +1,50 @@
+%date 2014-06-16
+%rating 4
+%author John Holland
+
+John Holland's *Emergence* is a brief introduction to ... well,
+emergence; the principle that simple interactions between simple
+components can, without the benefit of a grand guiding intelligence,
+lead to complex, ordered phenomena as long as there are *enough*
+interactions going on. The quintessential illustration (which Holland
+mercifully doesn't beat on as much as he could have) is ant behaviour:
+While an individual ant is an incredibly simple organism living its
+life according to a quite simple set of rules, the many interactions
+between individual ants leads to highly sophisticated colony behaviour
+even without any kind of central guiding intelligence. 
+
+This is essentially the inverse of principle of *reductionism* from 
+philosophy of science: In reductionist science, phenomena are
+decomposed into interacting component parts, and gaining an
+understanding of the component parts then allows us to understand 
+and make predictions about the whole. Emergence is essentially the
+bottom-up companion to top-down reductionism: The principle of 
+emergence holds that from the many interactions governed by
+"micro-laws" will emerge "macro-laws" that we can then use to make
+predictions about higher-level phenomena while *ignoring* the
+micro-level. Essentially, this is similar to the concept of
+abstraction levels in computer programming.
+
+The book attempts to extract some general rules about the concept
+of emergence, through computer modelling of emergent phenomena - 
+models ranging from playing checkers (board games being highly 
+emergent systems), through Conway's *Game of Life*, to simulating a
+central nervous system. The central contribution is Holland's
+mechanism of *constrained generating procedures*, which he
+demonstrates are a useful means of modelling how "macrolaws" can 
+follow from "microlaws", which are in fact exactly what emergence
+is about. They're much like the menagerie of simple automata studied
+by theoretical computer scientists, in fact, except that they're 
+explicitly connection-oriented (precisely because they're used to
+model systems that attain complexity through interactions and
+connections).
+
+It's not exactly light reading (although the heavier math has
+been placed in grey boxes, allowing the mathematically disinclined
+reader to skip it), but the writing is remarkably clear and concise.
+Whenever something raised a question in my mind, Holland ended up 
+addressing it explicitly a few pages later.
+
+Definitely recommended, particularly if you are the kind of person to
+maintain an interest in the weird intersection between natural science
+and theoretical computer science.

@@ -1,0 +1,28 @@
+%date 2015-07-12
+%notitle
+
+Plutonium is a HTML generator written in Scheme. It has its name solely
+so that I can proudly & truthfully claim that my website is *powered by
+plutonium*.
+
+It's entirely static, which means that Plutonium-based sites are *fast*.
+There's no database, no dynamic server logic, no nonsense --- just 
+HTML that can be spewed into the aether as fast as your [favourite
+HTTP server](http://www.nginx.org) can send it. Pure bliss.
+
+Of course, this also strictly limits what you can actually *do* with
+Plutonium-based sites, but its particular feature set happens to be
+precisely what I need here. It is free software; you are free to read the
+code and twist it to your own foul ends if you want. Provided, of course,
+that you can read Scheme and that your foul ends can be served by a
+rather simple static HTML generator.
+
+Resources
+=========
+* [GitHub repository](https://github.com/datarama-dk/plutonium)
+
+History & Revision Notes
+========
+* [[Plutonium 0.0.1|0.0.1]] -
+  Initial version
+  <span class="date">Jul 2015</span>

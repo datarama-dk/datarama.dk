@@ -1,0 +1,61 @@
+%date 2014-02-20
+%author Paul Graham
+%rating 4
+
+Paul Graham's *On Lisp* was originally published in dead tree form way back in
+the early 90's, and while it's been out of print for some years, used copies
+can be found here and there. They're rather expensive, as the book has become
+something of a collector's item after Graham achieved Internet fame. However,
+you can also download the full text as a PDF or Postscript file from [Paul
+Graham's own website](http://www.paulgraham.com/onlisptext.html). 
+
+The main argument of the book is that Lisp is an awesome programming language,
+demonstrated by showing some examples of cool programming techniques that are
+encouraged (or made possible) by Lisp. The introductory chapter contains some
+Lisp advocacy and some observations on how working in Lisp influences software
+design, and makes the point (central to the rest of the text) that Lisp
+programmers don't work merely by writing the problem down to Lisp, but also by
+building Lisp up to the problem -- all Lisp development thus ends up being
+language development, and the final application then ends up being written in 
+a Lisp-based language tailored specifically for that particular kind of
+application. The rest of the text has two main parts: One concerning functional
+programming, and one containing macros.
+
+I've been a functional programming fan for a long time, and the part concerned
+with functional programming didn't really teach me a lot I didn't already know.
+However, what *was* striking to me (I'm a Scheme aficionado) was how absolutely
+*awkward* Common Lisp seems to be for expressing functional programming idioms.
+This is due to the Lisp-2 nature of the language, where functions and
+nonfunction values have different namespaces, and - consequently - must use a
+variety of annoying constructs to "bridge the gap" (such as using the `funcall`
+macro to call a function received as an argument). 
+
+On the other hand, I *did* learn a lot about macros from the book. I generally
+am not a huge fan of macros - even in Lisp, which has much more useful macros
+than any other language I know. You see, macros essentially [turns Lisp into 
+two languages](http://www.lispcast.com/lisp-with-macros-language-stack) that 
+happen to have the same surface syntax, and that sometimes interact with each
+other in weird ways. In classic "unhygienic" macro systems like the one used
+by Common Lisp, you need to program defensively using a number of awkward
+constructs, lest you get all sorts of weird variable capture bugs. With fancy
+hygienic macro systems like the one in Scheme, you need a huge, complicated
+monstrosity of a preprocessor - just to essentially get lexical scoping at
+compile time. I prefer functions whenever I can get them, and in general, the
+more I've used macros, the more I've come to like [John
+Shutt](http://fexpr.blogspot.com/)'s attempt to revitalize old-school Lisp 
+`fexpr`s - they completely fuck up static compilation, but they're first-class,
+they exist at runtime (and can use the language's scoping semantics to achieve
+hygiene), and they don't add a lot of extraneous complexity to the language.
+
+I'm still undecided as to whether my own Lisp, Merlin, should be fexpr-based,
+or whether I should try my hand at a macro system I won't find painful to use.
+
+Well... that was a bit of a digression. Back to the book.
+
+My dislike of macros aside, Graham's treatment of them is *good*. He
+demonstrates some of the things you can do with macros that you can't really 
+do without them (anaphora, for example), and his writing is excellent, as 
+it always is.
+
+Highly recommended for Lisp fans, particularly given that the electronic
+version is available free of charge.

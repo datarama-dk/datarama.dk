@@ -1,0 +1,153 @@
+%date 2014-08-20
+%rating 4
+%author Ivan Illich
+
+I'm not really sure where to start with this one.
+
+Ivan Illich (1926-2002) was first and foremost a staunch critic of industrial
+society. He rose to counterculture prominence in the 1970s, as the author of a
+series of short books critiquing various facets of industrial society,
+including education, energy economy, labour, professional medicine and
+technology --- the latter of which is the theme for *Tools for Conviviality*.
+It followed *Deschooling Society* (which primarily criticized institutional
+education) and preceded *Medical Nemesis* (which attacked professionalized
+medicine), and themes from both also take a prominent role in this book.
+Unlike what you might expect from a 1970s technology critique, Illich wasn't
+writing from a Marxist perspective --- he was writing from a *Christian*
+perspective. However, he doesn't explicitly mention God or the church (he was
+a Catholic priest) in *Tools for Conviviality*.
+
+Further unlike what might be expected from a 1970s technology critique (no
+matter its ideological background), Illich doesn't advocate outright
+primitivism: His vision of technology does allow the existence of telephones,
+computers and particle accelerators. 
+
+Illich's attack on professionalized medicine *terrifies* me. One of the
+reasons I regard primitivists as my ideological enemies is simple
+self-preservation: As a person born with a respiratory disability, I would
+have died as a child if I was born in a primitivist society.  I'd also be dead
+if I lived in a society which didn't have people doing pharmacological
+research and instead substituted yoga and bullshit herbal remedies
+administered by "barefoot doctors". Thousands of people just like me die every
+day in the Third World, precisely *because* they don't have the privilege of
+access to modern medicine. I have difficulty mustering much enthusiasm for a
+"better world" in which my own role will be to die a horrible and painful
+death from respiratory failure to prove an ideological point.
+
+If I can't breathe to it, it's not my revolution.
+
+With that out of the way: The central concept of the book is the role
+technology plays in the industrial institutionalization of specialized
+knowledge. The process of institutionalization alienates people both from
+their work (as Marx also pointed out) and from their communities, and
+ultimately diminishes human self-confidence and capacity for problem-solving
+as it creates a society of "human cogs" in the industrial machine. It is in
+this light Illich's disgust for professionalized medicine and
+institutionalized education should be seen: He views both as institutions
+which serve to adapt people to a sick industrial society, with the education
+system training them to serve the bureaucratic and industrial elite, and the
+medical establishment permanently treating them for the ills that arise from
+living in such a society. Both systems, according to Illich, also serve to
+further professionalization and create disdain for the self-taught by creating
+institutional monopolies on learning and health care.  Because the fundamental
+value of industrial society is endless economic growth, its institutions serve
+no other purpose than to perpetuate economic growth, reducing human beings to
+*tools* for the institutions.  Likewise, the modality of modern education
+focuses on *ownership* --- people wish to *have* an education, rather than to
+*learn* a skill, essentially turning learning from a process to be
+participated in into a market commodity to be bought and owned. Like all
+market commodities, learning then becomes subject to *scarcity* (or it would
+lose its market value), creating an unnecessary and harmful divide
+between the educated and the uneducated.
+
+Rather than being an activity for people to satisfy curiosity and the human
+thirst for knowledge, institutional education reduces learning to a purely
+instrumental act, centered on preparing people to become industrially
+productive.
+
+The technological counterpart to this educational alienation is manifested in
+the divide between what Illich calls *manipulatory* and *convivial*
+technologies --- in essence, technologies that control humans vs. technologies
+that are controlled *by* humans. Manipulatory technologies are those that
+bolster institutionalization, create a demand for an expert caste, and which
+end up *exacerbating* the problems they were meant to solve. Illich's running
+example is the car, which was meant to allow freedom of movement, but
+eventually reaches a level of domination where cars *destroy* freedom of
+movement for everbody who *doesn't* own a car. Illich terms this a *radical
+monopoly* --- rather than being a single product marketed by a monopolist, the
+car remodels society into a construction in which it is a necessity, it
+*"creates the remoteness that it alone can shrink"*. For a more contemporary
+example, I thought of the modern cell phone: I haven't owned one since the
+late 1990s, and now that a common means of Web authentication involves sending
+SMS messages, I find it impossible to interact with certain Web services. With
+the advent of the cell phone, it has become a *social expectation* for a
+person to be available for communication at all times, and the only way for a
+person to be so is ... the cell phone.
+
+In contrast, a *convivial* technology is one that can be easily used, by
+anybody, as often or as seldom as the user likes, and for whatever purpose the
+user wants. Some convivial tools also permits their users to tinker, making
+them ideal for self-directed learning. Illich uses ubiquitous cheap pay phones
+as an example of a "structurally convivial" tool: Everybody who can spare a
+coin can use it to say whatever they want, and there's no way for bureaucrats
+or industrialists to control *what* the phone is used to say, or who gets to
+use it --- and it's of limited utility for totalitarians wishing to construct
+a surveillance society, because even though pay phones can be tapped, they
+don't offer possibilities for predicting when a given person uses a given pay
+phone. Essentially, Illich's concept of "conviviality" is much like the punk
+DIY ethic and the hacker culture of open sharing of technology. Essentially,
+convivial technologies are designed to serve socially interrelated
+autonomous, individual human beings rather than managers.
+
+It's important to note that Illich doesn't propose forbidding manipulatory
+technologies (or institutions), or creating a society in which large-scale
+industry cannot exist. Rather, he envisions a society in *balance*, where
+tools for industrial production exist alongside community-run and personal
+tools that foster self-realization, effectively keeping the manipulatory
+nature of the former from dominating people's lives.
+
+In many ways, Illich's views of the social roles of technology reflect my own
+--- which is perhaps unsurprising, given that I grew up in the aftermath of
+the 1970s personal computer revolution, which was largely inspired by his
+ideas (Lee Felsenstein, for instance,
+[explicitly](http://www.leefelsenstein.com/?page_id=82) mentions Illich's 
+philosophy among his influences) and subsequently spent my youth hanging about
+the Amiga demo scene and the Free Software community, both of which also
+embodied a heavily Illichesque "computer power to the people" ethic. At any
+rate, I didn't find it as "mind-blowing" as many other reviewers have. Many of
+the thoughts about *who* technologies are supposed to serve and how they
+affect society weren't new to me --- and what *was* new to me was mostly
+things I find revolting (Illich's wish to sentence thousands of people to
+death by abolishing the medical system) or just plain weird (some of his
+anti-education thoughts), all of which he treats more comprehensively in
+other works. I should probably read *Medical Nemesis* and *De-Schooling
+Society* at some point.
+
+As an aside, "conviviality" seems to me to be *precisely* the quality that
+exists in my favourite programing languages (Lisp, Forth, Smalltalk), and is
+absent in my least favourite ones (C++, C#, Java). The Smalltalk design
+principles [explicitly
+mentions](http://www.cs.virginia.edu/~cs655/readings/smalltalk.html) how it's
+intended to serve "the creative spirit in everyone", and its *first* goal is
+to be "entirely comprehensible to a single individual" --- a principle I find
+so important that I also consider it a primary design principle of Merlin.
+Forth and Lisp have a similar characteristic, and both language families are
+simple and tinkering-friendly enough that lots of coders have made their own
+implementations over the years --- as have communities of coders. In stark
+contrast, C# and Java are designed and maintained by giant corporations for 
+the purpose of keeping alienated, mediocre industry programmers from hurting
+themselves and their colleagues, and C++ is so stupendously overcomplicated
+that only industrial institutions *want* to use it. They're managers'
+languages, not hackers' languages. The quality of being a "hacker's language"
+seems to me to be precisely equivalent to being a "convivial technology".
+
+Unlike many other works of this nature, *Tools for Conviviality* scores points
+for being short, clear and to the point. 
+
+Recommended for its thoughts about technology, how culture and technology 
+interact, and its thought-provoking idea of a post-industrial society that
+*isn't* either primitivist stone age romanticism or Star Trek. The more
+disagreeable parts were also well-written and interesting --- I still don't
+agree with them, but Illich definitely isn't stupid or evil.
+
+These days, it's even [available online](http://muforth.nimblemachines.com/p/tools-for-conviviality.html).

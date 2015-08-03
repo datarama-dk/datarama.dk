@@ -1,0 +1,45 @@
+%date 2014-07-14
+
+This site doesn't have a comment system. This isn't for technical reasons:
+Although [[Plutonium]], being a static generator, doesn't in itself feature any
+neat way of supporting comments, it'd be easy enough to have it emit some
+Javascript that called out to some external comment server, like
+[Isso](http://posativ.org/isso/) or [talkatv](http://comments.rebattu.fr/). No,
+I've *deliberately* opted out of having a comment system. There are several
+reasons for this. 
+
+First of all, a comment system will turn any website into a discussion forum,
+and I have no particular desire to be a forum admin -- in fact, I have a strong
+desire to *not* be one. The kind of discussions that spring up on tech/nerd
+websites tend to be incredibly negative, profoundly useless, more about
+posturing or beating the opposition than about anybody actually *learning*
+anything. I'd much rather be coding, or reading.
+
+Second, comment systems invariably attract the attention of two
+particular types of entities that I want to minimize my dealings with:
+Raging assholes trying to get people worked up, and robots trying to
+sell penis enlargement potions.
+
+Finally, when I know that I'm writing for a commentariat, I find that my
+writing changes, for the worse. I inevitably 
+[slide into defensive writing](http://pchiusano.github.io/2014-10-11/defensive-writing), full
+of hedges and absurd clarifications, but devoid of any interesting rhetorical
+devices or style that some deliberately uncharitable jerk *might* use to prove
+that I am the second coming of Stalin or something. I stop writing in order to
+explore or communicate ideas, instead focusing on not saying anything that
+could be interpreted as wrong. In essence, I start writing Academese.
+
+I should probably note here that this shouldn't be interpreted as an 
+attack on *all* comment systems. I use comment systems on various blogs
+and sites --- yes, sometimes including the wretched hive of scum and
+villainy that is the Youtube comment section. My [Facebook
+profile](https://www.facebook.com/skongshoj) is public, for instance,
+and all my posts there allow unlimited commenting. 
+
+But my own site, for now, is an island of calm in the sea of madness.
+
+If you think I'm Wrong
+======================
+If you think I'm wrong about something and you want me to know how 
+wrong I am, feel free to [send me mail](mailto:skongshoj@gmail.com). If you'd
+like to debate me publicly, I'd be more than willing to work something out.

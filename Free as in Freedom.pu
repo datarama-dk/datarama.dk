@@ -1,0 +1,71 @@
+%date 2014-03-27
+%author Sam Williams
+%rating 3
+
+For most in the software community who know about him, RMS is either regarded
+as a brilliant, principled hacker-activist, or as a frightening, fanatical lunatic.
+Sam Williams' RMS biography *Free as in Freedom: Richard Stallman's Crusade for
+Free Software* tries to tell his story, tracing his life from unhappy withdrawn
+child prodigy through teenage social outcast, to top-performing academic,
+computer hacker and finally political leader. 
+
+Unfortunately, despite the interesting subject matter (apart from RMS' personal
+history, the book describes the MIT AI Lab hackerdom, the concept of free
+software itself, the FSF vs. OSI schism, the early years of GNU/Linux), the book
+falls rather flat. I realize that it is difficult to write a biography about a
+person who has already committed so many of his personal thoughts to the public
+record, but ...  the writing itself is mediocre, at best. 
+
+On the positive side: RMS is viewed from a sympathetic angle, without descending
+into idol worship of him, his results or his abilities. The stories from the AI
+Lab are fascinating, and makes me wish I had had the opportunity to live in a
+similar environment. However, the description of RMS' devastating emotional
+pain when that environment - his home - was eventually destroyed, however, is a
+stark reminder that I should probably be careful what I wish for.  He seems to
+have always been an intense person; intense in his passions, intense in his
+intellectual pursuits, intense in his pain and his challenges. Most of the
+material about his youth I found eerily relatable. I too had a painful
+childhood. I think most autistic nerds do.
+
+RMS might, in fact, be autistic. The book devotes some text to discussing this
+(and Williams has interviewed RMS himself, his mother and several of his
+friends and colleagues on the subject). RMS himself believes that he might have
+been given a diagnosis of Asperger's Syndrome or high-functioning autism if he
+was born 40 years later. His developmental history was *weird*, and traits such
+as his very rigid thinking style (and extremely strong principles), his odd
+gaze, his inability to relate to his peers in his youth, his intensely logical
+approach and his ability to hyper-focus and block out the outside world - all
+are classic indicators of a person on the autism spectrum.  I enjoyed that this
+discussion was made without pathologizing RMS (or autistic people in general) -
+in fact, Eben Moglen (RMS' long-time associate) points out that many people
+over the years have viewed some of his eccentric traits as obstacles in getting
+to know "the real RMS", when in fact those traits *are* the real RMS.
+
+The epilogue - in which RMS relates that he has finally found a little
+happiness in his life after his long string of bitter personal and political
+defeats - was a poignant end to the story. His girlfriend's realization that
+one of his primary personal, intellectual and political motivators was crushing
+loneliness was downright tear-inducing.
+
+The pacing of the book is *weird*, though. An entire chapter is devoted to a
+description of RMS suffering a mild case of road rage during a poorly-planned
+driving trip in Hawaii - but the entire span of time between the announcement
+of the GNU project to the launch of the Linux kernel is over in just a few
+brief pages.
+
+There are outright factual errors, such as when Linux is referred to as a
+"*bored-out, supercharged version of Minix*" - it is a matter of public record
+(and an infamous Usenet flamewar between Linus Torvalds and Andy Tanenbaum)
+that the Linux kernel architecture is *nothing like* that of Minix; Williams
+might as well be saying that a Porsche is a souped-up version of a Spanish
+galleon.
+
+Spelling errors, distractingly bad hyphenation and shoddy typography add a poor
+surface to a mediocre reading experience. A pity; I have admired RMS ever since
+I became aware of him and his work.
+
+Appropriately, though, the book is licensed under the GNU Free Documentation
+License. You can [get the entire text from
+O'Reilly](http://oreilly.com/openbook/freedom/) if you want. There's also a
+[2010 version](https://static.fsf.org/nosvn/faif-2.0.pdf) updated by RMS
+himself - I haven't read that one, though.

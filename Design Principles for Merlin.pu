@@ -1,0 +1,70 @@
+%date 2015-07-15
+%meta ...and for my next trick, I shall build a fully-functioning Mars probe powered entirely by potatoes.
+
+The ideal of the Merlin project is to build a *computer-assisted imagination*,
+a programming system designed for rapid creative exploration, evolution and
+expression of ideas, and to empower people to fluidly turn ideas into software.
+It takes the view that programming is a deeply creative way of thinking, not
+merely the final step in a bureaucratic analyze-design-implement cycle. 
+
+This is a lofty ideal, and it won't help much when dealing with the tactical
+decisions and dirty tradeoffs of language design. Therefore, I have focused on
+seven of its specific implications and taken them as design principles:
+
+1. **Personal Mastery**: *The full system is comprehensible to a single individual.*  
+   Human imagination expresses itself in individual human beings, not in
+   business enterprises or bureaucratic organizations. Therefore, a tool
+   designed for assisting it must be intellectually manageable by a single
+   competent human being, and its focus must be to increase the scope of what a
+   single human being can intellectually manage.
+2. **Dynamism**: *Programming is a real-time, feedback-driven interactive process.*  
+   Experimentation is a primary means of both developing understanding and of 
+   creative expression, which is why it is a fundamental activity in both art
+   and science. In general, getting real feedback is better than attempting 
+   prediction (which is notoriously error-prone for humans anyway), and in most
+   creative processes feedback is instant: A painter doesn't have to recompile
+   the canvas to see the effect of a brushstroke. The more ways a programming 
+   system allows programmers to directly observe the consequences of program
+   changes, and the less time and effort it requires to do so, the more it
+   supports experimentation, and the less it forces programmers to attempt to 
+   mentally simulate the actions of the computer --- a profoundly silly exercise 
+   when there are perfectly good computers sitting right in front of them.
+3. **Parsimony**: *The core consists of few, freely composable, concepts.*  
+   In an intellectually manageable computational universe, the "laws of 
+   nature" (the rules of the core language) are few, general, and compose freely. 
+   Quoting [David Ungar](http://people.dsv.su.se/~beatrice/DYPL/ungar.pdf):
+   "Consider how every chord in Western music is built out of only twelve
+   notes, or how the entire physical world can be viewed as a collection of only 
+   four forces". The core language must thus have few concepts, with
+   well-defined interactions, from which compound concepts can be built.
+4. **Abstraction**: *Complexity is managed by naming compound concepts.*  
+   The fundamental means by which the human mind deals with complex phenomena
+   is by *naming* them, treating them as compound units and deliberately
+   ignoring their constituent parts. To stay in Ungar's metaphor, a musician
+   may think in terms of chords rather than single notes, and a chemist in
+   terms of molecules rather than subatomic particles. The more kinds of
+   program element a system allows the programmer to name and use as compound
+   units, the better it makes use of this human faculty for complexity handling, 
+   and the more it empowers people to intellectually manage program complexity.
+5. **Modularity**: *Program elements can be reasoned about in isolation.*  
+   This is essentially the dual of the abstraction principle: If a piece of a 
+   program can be given a name and treated as a unit, then it must be possible
+   to understand it without understanding the internal details of other such
+   units. This allows reducing complex problems to interactions of simple ones
+   ("dividing them into mind-size bites", in the words of [Seymour
+   Papert](http://dl.acm.org/citation.cfm?id=1095592)), and this is essential
+   to mastering them. Thus, the more ways a system allows programmers to
+   decompose problems into subproblems, understand them in isolation, and
+   recompose their solutions, the more it assists the mind in solving them.
+6. **Extensibility**: *User-defined constructs are indistinguishable from built-ins.*  
+   When compound concepts are defined, they become part of the language, and
+   the gradually extended language serves as an evolving representation of the
+   programmer's understanding of the program. The more effective means the
+   system provides for such language adaptation, the more effectively programmers
+   can master it and make it their own.
+7. **Uniformity**: *Every special case and arbitrary restriction is a design weakness.*  
+   Special cases and apparently arbitrary restrictions increase the cognitive
+   burden of a language, because they force programmers to keep various
+   exceptions to linguistic rules in their heads. They should therefore be
+   regarded as design weaknesses, and allowed only when they have no sane
+   alternatives.

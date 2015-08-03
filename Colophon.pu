@@ -1,0 +1,82 @@
+%nodate 
+
+Datarama is unapologetically Web 1.0. The pages are all static HTML, there
+are no ads, no social media integration and no commenting system. This is
+deliberate. If you didn't know any better, you'd almost think this was
+somebody's personal homepage, not a community blog.
+
+For a personal site, I honestly can't figure out why anybody would ever want
+to use anything *but* static HTML. I'm the only author. Even at my most manic
+caffeine-fueled writing binges, I don't exactly produce content at a rate that
+requires a fancy, massively parallelism-friendly relational database. To me,
+generating pages when I've updated something, as opposed to doing so *on every
+single page request* not only seems like the obviously correct solution, it
+also handily takes care of the increasingly anachronistically named [Slashdot
+effect](http://en.wikipedia.org/wiki/Slashdot_effect).
+
+I don't expect nor intend to make any money from my site, so there are no ads
+here. I earn what money I need from my day job (which I happen to enjoy very
+much as well), so I have the fortunate privilege of running my website without
+renting out space for sinister companies and scam artists to litter with an
+assortment of unsightly electronic turds that [everybody blocks
+anyway](http://www.getadblock.com/).
+
+If you want to share my pages on your favourite social network, by all means
+feel free to do so! However, there are no social media integration widgets
+here, so you're going to have to go through the ritual of copying
+an URL and pasting it. There are two reasons for this: I have no need for
+tracking whether various strangers on social media appreciate my stuff, and
+I have *even less* need of providing tracking data about my visitors' reading
+habits to companies like Facebook and Google.
+
+I have no comment system, because having a comment system turns any website
+into a discussion forum, and I have no particular desire to be a forum admin.
+In fact, I have a strong desire *not* to be one. Furthermore, comment systems
+invariably attract the attention of two particular types of entities that I
+want to minimize my dealings with: Assholes, and robots trying to sell
+penis enlargement potions.
+
+My current visual design is based on the basic idea of a mad scientist's lab
+notebook, and was originally largely inspired by the works of artist [Justin
+Amrhein](http://www.justinamrhein.com/), combined with my lifelong love of
+Golden Age science fiction (which would often prominently feature mad
+scientists as both heroes and villains). I find that this largely reflects my
+personality and my preferred tone. 
+
+This is also why the front page features some self-appointed nonsense titles;
+I figured that a dash of ludicrous grandiosity would be very fitting for that
+theme. In case you're wondering, a *planetary cosmonaut* is someone who
+travels space on board a planet, an *oxyglot* (literally "acid-speaker"/"acid
+tongue") is someone prone to sarcastic or surreal speech, and a *paramath* is
+to a mathematician as a paramedic is to a medical doctor.
+
+Software
+========
+ * [[Plutonium]]
+ * [Vim](http://www.vim.org/)
+ * [Scheme](http://www.schemers.org/) (specifically [Chicken](http://call-cc.org/)).
+ * [Markdown](https://daringfireball.net/projects/markdown/)
+ * [Ubuntu](http://www.ubuntu.com/)
+ * [lighttpd](http://www.lighttpd.net/)
+
+The HTML rendering engine, Plutonium, was written by me and is custom-designed
+for this site. Feel free to use it if you'd like; it's free software. In fact,
+as you can see, *all* software involved here is free software.
+
+Typography
+==========
+ * [Linux Libertine](http://www.linuxlibertine.org/)
+ * [Voltaire](http://www.fontsquirrel.com/fonts/voltaire)
+ * [Ubuntu Mono](http://font.ubuntu.com/)
+
+Fonts were chosen to fit the vaguely Golden Age of Science Fiction
+(1920s-1950s) retro-futuristic visual theme, even though all three of them are
+actually new designs. Libertine (used for body text) is a transitional serif
+face in the basic spirit of Baskerville, Century Schoolbook and Times, and
+looks much like what you might find in an older science textbook -- or,
+indeed, a science fiction novel. Voltaire is a modernist geometric sans-serif,
+and I find it works really well for the menu headings. Ubuntu Mono is a
+monospace font used for code examples --- I originally wanted to use
+something more typewriterish, but I could find no good free typewriter font
+that supported the range of Unicode I need (I use Greek characters and
+mathematical symbols in some of my code).

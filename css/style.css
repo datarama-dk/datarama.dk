@@ -1,0 +1,593 @@
+/* ## DATARAMA version 1.0 ####################################################
+ * Copyright (C) 2015 Simon Kongshøj                                         */
+  
+/* == 1. Page & Body ======================================================= */
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td,hr {
+  margin:0; 
+  padding:0;
+  line-height:24px;
+}
+html {
+  overflow-y:scroll;
+  font-family:"epicure",serif;
+  font-feature-settings:"onum" 1;
+}
+body {
+  font-size:16px;
+  position:relative;
+  width:951px;
+  min-height:100vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+p,pre,code,h1,h2,h3 {
+  line-height:24px;
+}
+
+/* == 2. Colour Scheme & Background Textures  ============================== */
+html {
+  background-color:#ccc7ba;
+  background-image:url("/img/paper.jpg");
+}
+body {
+  background-image:url("/img/graph.png");
+}
+#main, hr:after {
+  background: url("/img/paper1.jpg"); 
+}
+html, #archive_link a:after, hr:after {
+  color:#333;
+}
+a, ol li:before, ul li:before, #topmatter {
+  color:#a00;
+}
+a:hover {
+  color:#006027;
+}
+code {
+  color:#111;
+}
+#bottommatter a {
+  color:rgba(20,20,20,0.75);
+}
+#bottommatter {
+  color:#f00;
+}
+#main,hr:after {
+  background-color:#dcd7d0;
+}
+
+/* == 3. Layout ============================================================ */
+p, ol, ul {
+  text-align:justify;
+  -moz-hyphens:auto;
+  -webkit-hyphens:auto;
+  hyphens:auto;
+}
+blockquote {
+  padding:0 0.5em;
+  margin: 0 0.5em;
+  border-left:1px dashed #a00;
+  border-right:1px dashed #a00;
+  font-size:16px;
+}
+pre {
+  margin-left:1em;
+  white-space:pre-wrap;
+}
+code {
+  font-family:"inconsolata";
+  font-size:12px;
+}
+.firstword {
+  letter-spacing:1px;
+  font-variant:small-caps;
+  font-style:normal;
+}
+.dropcap {
+  font-style:normal;
+  float:left;
+  line-height:34px;
+  margin-top:8px;
+  font-size:51px;
+  padding-right:4px;
+}
+#topmatter {
+  padding-top:0px;
+  margin-bottom:7px;
+  text-align:center;
+}
+#content {
+  margin-left:204px;
+  padding-top:24px;
+  padding-left:47px;
+  padding-right:47px;
+  border-left:1px dashed #8e8583;
+}
+#content .note {
+  width:170px;
+  position:absolute;
+  margin-left:-236px;
+  font-style:italic;
+  float:left;
+  display:block;
+  font-size:12px;
+  text-align:right;
+}
+#content ol .note {
+  margin-left:-266px;
+}
+#bottommatter {
+  margin-top:6px;
+  text-align:center;
+  font-size:10px;
+  letter-spacing:1px;
+  font-family:"voltaire",sans-serif;
+  text-transform:uppercase;
+}
+#main {
+  width:842px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom:0;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.35);
+  border:1px solid #888;
+}
+#pagetitle, pre, ul, ol, p{
+  margin-bottom:24px;
+}
+
+#page_subtitle{
+  border:none;
+  font-size:14px;
+  margin-top:-24px;
+  margin-bottom:24px;
+}
+
+ol ol{
+  margin-bottom:0;
+}
+
+ul ul {
+  margin-left:1em;
+  margin-bottom:0;
+}
+#content ul .date {
+  font-family:voltaire;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:12px;
+  float:right;
+}
+#breaker{
+  font-size:1px;
+  clear:both;
+  line-height:24px;
+}
+
+/* 4. Headings ============================================================= */
+#pagetitle {
+  font-size:32px;
+  border:0;
+  letter-spacing:0;
+  text-transform:none;
+}
+h1 {
+  font-size:18px;
+  font-weight:normal;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  border-bottom:1px solid #555;
+  margin-bottom:-1px;
+  font-feature-settings:"lnum" 1;
+}
+h2 {
+  font-size:18px;
+  font-weight:normal;
+  font-style:italic;
+  border-bottom:1px solid #555;
+  margin-bottom:-1px;
+}
+
+/* == 5. Links ============================================================= */
+a {
+  text-decoration:none;
+  opacity:1;
+}
+a:hover {
+  text-decoration:underline;
+}
+a {
+  -o-transition:color .25s linear;
+  -ms-transition:color .25s linear;
+  -moz-transition:color .25s linear;
+  -webkit-transition:color .25s linear;
+  transition:color .25s linear;
+}
+
+/* == 6. Lists ============================================================= */
+ol {
+  padding-left:1em;
+  line-height:24px;
+  counter-reset:li;
+} 
+ol li {
+  padding-left:1em;
+  list-style:none;
+  counter-increment:li;
+  position:relative;
+} 
+ol li:before {
+  margin-left:-1.25em;
+  width:1em;
+  content:counter(li) " ·";
+  padding-right:.25em;
+  text-align:right;
+  position:relative;
+} 
+ol ol li:before { content:counter(li,lower-alpha) "."; margin-left:-0.75em;}
+ol ol ol li:before { content:counter(li,lower-roman) ")"; }
+
+ul {
+  line-height:24px;
+  padding-left:.5em;
+  list-style:none;
+}
+ul li:before {
+  padding-right:.5em;
+  content:"·";
+}
+
+/* == 7. Review Ratings ==================================================== */
+#content li a.star1:before, 
+#content li a.star2:before, 
+#content li a.star3:before, 
+#content li a.star4:before, 
+#content li a.star5:before{
+  float:left;
+  font-size:12px;
+  color:#6c6563;
+  margin-right:6px;
+}
+#content li a.star1:before { content:"★☆☆☆☆"; }
+#content li a.star2:before { content:"★★☆☆☆"; }
+#content li a.star3:before { content:"★★★☆☆"; }
+#content li a.star4:before { content:"★★★★☆"; }
+#content li a.star5:before { content:"★★★★★"; }
+
+/* == 8. Page Dividers ====================================================== */
+hr { 
+  padding: 0; 
+  border: none; 
+  border-top: medium double #8a8482;
+  text-align: center; 
+  margin-left:auto;
+  margin-right:auto;
+  height:24px;
+} 
+hr:after { 
+  content: "★"; 
+  display: inline-block; 
+  top:-0.7em;
+  position: relative; 
+  font-size: 18px; 
+  padding: 0 4px 0 4px;
+}
+
+/* == 9. Sidebar =========================================================== */
+#sidebar {
+  margin-top:12px;
+  width:170px;
+  text-align:right;
+  padding:0 16px;
+  font-size:12px;
+  float:left;
+}
+
+#sidebar img {
+  width:170px;
+}
+#sidebar div {
+  line-height:14px;
+}
+#sidebar h2,#sidebar h3 {
+  font-style:normal;
+  font-size:16px;
+  font-family:"voltaire",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  border-bottom:none;
+  overflow:hidden;
+  margin-top:12px;
+}
+#sidebar h3 {
+  font-weight:normal;
+  font-size:14px;
+}
+
+#sidebar h2:before,#sidebar h3:before {
+  border-top:1px solid #333;
+  bottom:1px;
+  content: "";
+  display: inline-block;
+  height:1px;
+  position:relative;
+  vertical-align:middle;
+  width:100%;
+  margin-left: -100%;
+  right:0.25em;
+}
+
+#sidebar ul {
+  line-height:12px;
+  margin-bottom:0;
+  text-align:right;
+  padding:0;
+}
+#sidebar ul li:before{
+  content:none;
+}
+#sidebar ul li{
+  line-height:12px;
+  height:32px;
+  border-bottom:1px solid #999;
+  width:100%;
+}
+#sidebar ul li a {
+  display:block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  height:30px;
+  width:170px;
+  padding-top:12px;
+}
+#recent-activity ul li a{
+  padding-top:0;
+}
+
+#sidebar ul li:last-child{
+  border-bottom:none;
+}
+#sidebar .date {
+  line-height:16px;
+  display:block;
+  color:#333;
+  font-size:12px;
+  font-style:italic;
+}
+
+/* == 10. Front Page ======================================================= */
+.page_index #content ul:first-of-type {
+    padding-left:2em;
+    list-style:none;
+    display:table;
+}
+.page_index #content ul:first-of-type li {
+  display:table-row;
+}
+.page_index #content ul:first-of-type li a{
+  display:table-cell;
+  text-align:right;
+  padding-right:.4em;
+}
+.page_index #content ul:first-of-type li:before {
+  padding:0;
+  content:"";
+}
+#archive_link {
+  border-top:1px solid #333;
+  text-align:right;
+  letter-spacing:1px;
+  text-transform:lowercase;
+  font-variant:small-caps;
+}
+#archive_link a:after {
+  content: " →";
+}
+/* == 11. Archive Page ===================================================== */
+#archive {
+  margin:0;
+  padding:0;
+}
+#archive li{
+  display:table-row;
+}
+#archive li .date {
+  float:none;
+  font-family:"epicure";
+  text-transform:none;
+  letter-spacing:0;
+  font-size:1em;
+  width:140px;
+  display:table-cell;
+  text-align:right;
+}
+#archive li:before {
+  content:none;
+  padding:0;
+}
+#archive li .date:after {
+  color:#a00;
+  content:"·";
+  margin-left:0.25em;
+  margin-right:0.25em;
+}
+
+/* == A. Font Sources ====================================================== */
+@font-face {
+    font-family: 'epicure';
+    src: url('/fonts/Epicure_R.woff2') format('woff2'),
+         url('/fonts/Epicure_R.woff') format('woff'),
+         url('/fonts/Epicure_R.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'epicure';
+    src: url('/fonts/Epicure_I.woff2') format('woff2'),
+         url('/fonts/Epicure_I.woff') format('woff'),
+         url('/fonts/Epicure_I.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'epicure';
+    src: url('/fonts/Epicure_B.woff2') format('woff2'),
+         url('/fonts/Epicure_B.woff') format('woff'),
+         url('/fonts/Epicure_B.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'epicure';
+    src: url('/fonts/Epicure_BI.woff2') format('woff2'),
+         url('/fonts/Epicure_BI.woff') format('woff'),
+         url('/fonts/Epicure_BI.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'voltaire';
+    src: url('/fonts/Voltaire_R.woff2') format('woff2'),
+         url('/fonts/Voltaire_R.woff') format('woff'),
+         url('/fonts/Voltaire_R.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'inconsolata';
+  src: url('/fonts/Inconsolata_R.woff2') format('woff2'),
+       url('/fonts/Inconsolata_R.woff') format('woff'),
+       url('/fonts/Inconsolata_R.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* == B. HiDPI/Retina Graphics ============================================= */
+@media only screen and (min-resolution: 1.5dppx) {
+  html {
+    background-image:url("/img/paper@2x.jpg");
+    background-size:250px 250px; 
+  }
+  body {
+    background-image:url("/img/graph@2x.png");
+    background-size:95px 95px;
+  }
+  main,hr:after {
+    background-image:url("/img/paper1@2x.jpg");
+    background-size:250px 250px; 
+  }
+}
+
+/* == C. Responsive Layout ================================================= */
+@media only screen and (max-width:381px){
+  #sitetitle{
+    position:relative;
+    width:320px;
+    top:-40px;
+    margin-bottom:-48px;
+  }
+}
+
+@media only screen and (max-width:950px){
+  body { width:auto; background-position:center; }
+  #content{ border:none; display:table-header-group; }
+  #sidebar h2 { margin-top:24px; text-align:center; }
+  #content .note { display:none; }
+  #pagetitle { text-align:center; }
+  #main{
+    width:82%;
+    padding-bottom:8px;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:24px;
+    display:table;
+  }
+  #sidebar{
+    text-align:center;
+    width:auto;
+    display:table-footer-group;
+    float:none;
+    padding:0;
+  }
+  #sidebar h2:after {
+    border-top:1px solid #333;
+    bottom:1px;
+    content: "";
+    display: inline-block;
+    height:1px;
+    position:relative;
+    vertical-align:middle;
+    width:100%;
+    margin-right: -100%;
+    left:0.25em;
+  }
+  .page_index #content ul:first-of-type {
+    padding-left:0;
+    margin-left:auto;
+    margin-right:auto;
+    display:table;
+  }
+  #sidebar ul {
+    text-align:center;
+    padding-left:0;
+  }
+  #sidebar ul li a { width:600px; display:table-cell; } 
+  #breaker { line-height:0; }
+}
+
+@media only screen and (max-width:478px){
+  p, ol, ul{ text-align:left; }
+  #archive_link{ text-align:center; }
+  #archive_link a:after{ color:#a00; }
+  #pagetitle { font-size:24px; }
+
+  #content li a.star1:before, #content li a.star2:before, 
+  #content li a.star3:before, #content li a.star4:before, 
+  #content li a.star5:before{ display:none; }
+
+  .page_index #content ul:first-of-type li {
+    display:block;
+    font-size:12px;
+    line-height:12px;
+    text-align:center;
+    margin-bottom:12px;
+  }
+  .page_index #content ul:first-of-type li a{
+    padding-right:0;
+    font-size:18px;
+    line-height:18px;
+    display:block;
+    text-align:center;
+  }
+  #archive li{
+    display:block;
+    text-align:center;
+    border-top:1px solid #999;
+    padding-top:6px;
+  }
+  #archive li:first-child{
+    border-top:none;
+  }
+  #archive li .date {
+    display:block;
+    width:100%;
+    line-height:12px;
+    font-size:12px;
+    text-align:center;
+  }
+  #archive li .date:after {
+    content:"";
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+@media only screen and (min-width:479px) and (max-width:950px){
+  .sidebar-module-outer {
+    display:table-cell;
+    width:51%;
+  }
+  .sidebar-module-outer:nth-child(odd) .sidebar-module{ margin-right:8px; }
+}

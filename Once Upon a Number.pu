@@ -1,0 +1,56 @@
+%date 2014-07-13
+%rating 4
+%author John Allen Paulos
+
+*Once Upon a Number* is nominally a book about the intersection of
+mathematics and storytelling - two subjects that don't, intuitively,
+seem to have much to do with each other. From the cover blurb, it
+seemed as if Paulos was trying to present a kind of "mathematics of
+stories" --- something I found rather implausible, since creating a
+working formal model of general storytelling seems to me to most 
+likely be equivalent to constructing general artificial intelligence.
+
+Fortunately, that's not what this book is. In fact, it doesn't really
+seem to argue any central point at all, it's more of an exploration
+than a presentation. It's structured as a small collection of essays,
+mostly concerned with how math *itself* can contain stories, and how
+stories can contain math. 
+
+The first essay shows the relationship between informal anecdotal
+stories and statistics - in essence, how statistics emerge from such
+stories (and how much detail statistics must necessarily disregard).
+Paulos argues that humans have a kind of *intuitive* sense of
+statistics arising from the pattern-matching nature of our minds,
+although this intuition can unfortunately rather easily fall prey to
+trickery. The second focuses on interpretation and representation of
+the external world - again, with some focus on how the human tendency
+to look for patterns can sometimes lead os to find spurious ones (such
+as the "Bible Codes"). The third essay contrasts intensional and
+extensional logics, and while that discussion was certainly
+interesting, I particularly enjoyed the "chapter appendix" that
+contained an extended speculation about humour and formal systems
+(that, curiously, mirrored my own initial reflection that creating a
+"mathematics of stories" would be equivalent to making general AI - 
+at least insofar that these are humourous stories). The fourth essay
+gives an extended exposé on information theory and complexity 
+(the Kolmogorov variety, not the one usually studied in algorithmics
+and theory of computation), and the fifth and final gives some 
+speculation about how we can "bridge the gap" between stories and
+statistics.
+
+Overall, I enjoyed it. In particular, the humour and wordplay worked
+really well - and while the general public might probably be surprised
+to find so much of it in a mathematics book, some of the funniest 
+people I have ever known have been mathematicians. 
+
+Its greatest flaw was Paulos' tendency to ramble. It sometimes uses
+mathematical terminology *before introducing and explaining it*. I'd
+usually not even notice this - but then, I studied theoretical
+computer science, and I already know what, for example, Bayes' theorem
+and intensional logic are. My girlfriend, who's currently reading it
+too (and who studies law, not theoretical computer science), *did*
+notice, and would occasionally have to go back and re-read passages
+once she got to the relevant explanation a few pages later.
+
+But I can forgive rambling given a fascinating subject and an ability
+to present it with wit and humour. Recommended.

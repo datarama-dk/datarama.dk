@@ -1,0 +1,153 @@
+%date 2014-09-03
+%rating 2
+%author Herbert Marcuse
+
+So, when I was reading Ivan Illich's [[Tools for Conviviality]], it struck me
+that a lot of the central points reminded me of something I'd seen before ---
+specifically, it reminded me of [Herbert
+Marcuse](http://en.wikipedia.org/wiki/Herbert_Marcuse).  One of the founders of
+the 1970s *New Left* (equally critical of the capitalist West and the
+dictatorial Soviet bloc), his philosophy focused on the dehumanization of
+people by capitalism, technology and bureaucracy --- much like Illich, in fact.
+I have only read him in excerpt, so having inherited my late stepfather's copy
+of *One-Dimensional Man*, I figured I'd read it in its entirety.
+
+I went into this book *wanting* to sympathize. I admire the integrity of the
+New Left, and of the student activists that made up the majority of its
+members. I'm fairly sure that that would have been where I had found my
+political home base, had I been born twenty years earlier. New Left thinkers -
+including Marcuse - attempted to systematically analyze and expose the cultural
+and societal subsystems that oppress and limit human activity --- in a sense,
+they attempted to continue the Enlightenment project of bringing humanity from
+"the realm of necessity" to "the realm of liberty". They (unlike most of the
+left of the time) saw the Soviet Union for what it was: A corrupt, totalitarian
+dictatorship.
+
+That is why it frustrates me so much that I hated so much of this book.
+
+I'll start with what I found interesting and insightful.
+
+The overarching theme is that there are entire dimensions of human existence
+that have been effectively flattened by alienation, consumerism, bureaucracy
+and the absolute social focus of industrial efficiency. Essentially, citizens
+of advanced capitalist societies have had their minds mutilated through a
+totalitarian system of "total administration" --- and this system has been
+imposed entirely without the use of the terroristic methods usually associated
+with totalitarian societies. People are controlled not through fear and
+intimidation, but through pleasure and convenience. The primary means with
+which society maintains a state of struggle is through the imposition of *false
+needs*, which to a modern citizen are just as real as basic human needs. Where
+a feudal peasant spent his time worrying about feeding his children, a modern
+worker spends his worrying about how to afford the next generation of iPhone.
+
+In such a state of affairs, even *thinking* that life and society could be
+different is an uphill struggle: Economic concerns and the basic values of
+capitalist society become so ingrained that they become a pervasive backdrop
+that *cannot* be questioned, because they are barely even *perceived*. If
+activists demand better living conditions, they can be shut down with the mere
+implication that those would adversely affect the job market, or place "us" in
+a worse position in the global competition. Education serves only to create a
+mass of subservient cogs in the giant social machine; critical thought and
+cultural enlightenment are sacrificed in the name of industrial efficiency. The
+system doesn't achieve its totalitarian aspects by *quashing* dissent, but by
+*co-opting* and *assimilating* it: Bangladeshi sweatshop workers toil to make
+t-shirts with pictures of Che Guevara, sold by massive multinational companies
+to affluent middle-class people. High art is commercialized and vulgarized, and
+is sold with as little respect and ceremony as a McDonalds meal. Because the
+system is very good at securing basic creature comforts, it effectively
+eradicates resistance. Because workers are *part* of this system (and are
+reasonably well cared for in a Keynesian welfare state), Marcuse believes that
+the working class no longer has any potential to bring about social revolution
+--- the only remaining revolutionary potential comes from "minorities,
+outsiders and radical intelligentsia".
+
+It seems to me that modern Internet Social Justice movement, unfortunately,
+simultaneously proves Marcuse's greater point and disproves his more specific
+one.  It's a movement that bases itself entirely around *precisely*
+"minorities, outsiders and radical intelligentsia" ...  and it fights for
+*better integration of these groups* into the very system Marcuse hoped they'd
+rise up and destroy. Just like the labour union movement before them, they're
+being assimilated into the system.
+
+The same has happened with tech activists. In the 1970's, hacker and New Left
+radical Lee Felsenstein figured that bringing computer power to people would
+liberate them from the domination of corporations like IBM --- now, home
+computers are a multibillion-dollar business, and many of the initial mass
+produced ones were *manufactured* by IBM. The Internet was hailed as a way to
+secure free expression for the masses --- and now, it is fast being reduced to
+a combination of an ad delivery platform and a surveillance system.
+
+So, it's fair to say that the man had a point. Unfortunately, that point is
+marred by the kind of writing I've come to associate with French post-modernist
+antiscience philosophers: Vague, overly abstract, pretentious and full of
+romantization, bizarre exaggerations and inscrutable statements that appear
+indistinguishable from nonsense.
+
+About a third of the book is dedicated to an extended attack on science, logic
+and "technological rationality", which in Marcuse's view is the *root cause* of
+the social domination he describes. To him, it all went wrong with Galileo.
+Galileo's mathematization of nature was tantamount to *instrumentalizing*
+nature --- and hence, instrumentalizing humanity. Because "Galilean science"
+doesn't problematize its own social context, it becomes a mode of domination
+that legitimizes and validates that social context. To me, this seems like
+bullshit.  I mean, look at what science and technology did to Galileo's own
+society: The dominance of religion fell, entire forms of authority were
+rendered irrelevant, new modes of production emerged, the feudal class system
+was destroyed and replaced by the capitalist one. If that is "validating the
+social context", I have a hard time envisioning what "threatening the social
+context" would look like.
+
+Second --- and this seems like something many antiscience philosophers seem to
+have trouble understanding --- *not all of natural science is concerned with
+social issues*.  Detecting Higgs bosons will neither enslave or liberate any
+social group. Figuring out how life arose on Earth or how galaxy clusters form
+isn't going to increase the revenue of any corporation or lead to more
+bureaucratization, nor is it going to bring about socialist revolution or
+increased feminist awareness. Ironically, considering all of natural science
+exclusively in sociological terms seems to me to be the very *definition* of
+one-dimensional thinking --- just not in the dimension Marcuse was thinking
+about. Knowing and understanding Higgs bosons, abiogenesis or galaxy cluster
+formation might be a good thing, not because it will bring about social
+revolution *or* because it will improve industrial efficiency, but *because
+knowledge and understanding can be considered a priori good*.
+
+In fact, this has often baffled me when discussing science (or my own work in
+programming language design and implementation) with *both* left-wing social
+critics and right-wing market liberalists. Scientific curiosity so frequently
+gets met with *"but what's the application?"* --- it seems that even the
+*thought* that knowledge and understanding can be considered an a priori good
+is utterly alien to many people. If this isn't "one-dimensional", I don't know
+what is.
+
+Furthermore, quite a lot of Marcuse's science criticism is completely *alien*
+to science; it doesn't actually criticize any actual element of scientific
+theory or practice, instead attacking science from a completely detached
+position of pure ideology. Marcuse spends a lot of pages on the message
+"representing nature mathematically is domination" --- but doesn't really offer
+any compelling argument for it, and his attack on science unfortunately appears
+mostly as an attack on a *caricature* of science. He wants to replace
+scientific and technological thinking, but he's not clear about *what* he wants
+to put in its place, except for some vague references to how it must be
+situated on aesthetics rather than on mathematical reasoning.
+
+This, in fact, is a general theme of the book. There's a lot of exposition of
+structures of domination, but nearly *no* thought about what to *do* about any
+of it (except, of course, having a socialist revolution). No thought about
+whether any of these forms might continue in a socialist society (whether in
+their original form or somehow transformed). However, this might simply be
+because Marcuse himself held no hope for the future.
+
+For all my criticism of Illich (which, admittedly, was focused on his IMO
+mistaken views on medicine), I found at least part of his views of a
+post-industrial technological future compelling. His vision has bicycles and
+coin-op phones rather than cars and cell phones, but it *also* has a place for
+computers and particle accelerators. In Marcuse's vision, there'd be no reason
+to have particle accelerators, because *nobody would even be able to ask the
+questions that a particle accelerator can answer*. This prospect *frightens*
+me. It brings to my mind hideous images of a new scientific Dark Age, and if
+that's "progressive", then that word has become Newspeak.
+
+I found the basic description of the "one-dimensionalization", along with the
+analysis of bureaucracy and capitalism, quite insightful. The science criticism
+was vague and ill-founded, couched in Freudian allegory and overcomplicated,
+florid prose. 

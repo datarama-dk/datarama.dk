@@ -1,0 +1,57 @@
+%title Merlin 0.0.5
+%date 2015-07-26
+%subtitle Binary Primitives
+
+After introducing unary primitives in the last revision, this
+revision focuses on binary primitives. Most of the primitives
+implemented in this revision are actually variable-arity in full
+Merlin (as they are in most Lisps), and a later revision will extend
+them to their full glory. Once again, most of the effort here was 
+spent dealing with the JavaScript type system.
+
+It honestly took me by surprise that most other JavaScript-targeting
+compiled Lisps simply use the JS type coercion behaviour, even some
+that are nominally JS-targeted implementations of Scheme. At least
+[Ralph](https://github.com/turbolent/ralph),
+[HotCocoa](https://github.com/olleicua/hcl),
+[Chlorine](https://github.com/chlorinejs/chlorine),
+[ECMAchine](http://alex.nisnevich.com/ecmachine/),
+[Spock](http://wiki.call-cc.org/eggref/4/spock) and
+[ClojureScript](https://github.com/clojure/clojurescript) all inherit
+the JS type coercion insanity in all its demented glory. On the other
+hand, [BiwaScheme](http://www.biwascheme.org/) (not a compiler *to* 
+JavaScript, but an interpreter written *in* JavaScript) has
+Scheme-like behaviour. Of course, the fact that so many
+implementations simply ignore the bizarre JS type behaviour indicates
+that it might be less of a practical problem than I think.
+
+But given that I personally find JS' approach to types enormously
+disagreeable, I spent a little implementation effort in working
+around it. For now, I've implemented some tiny typechecking functions
+in the runtime. For instance, here's the one for numbers: 
+
+    function num(x){
+      if (!(typeof(x) == "number")) throw("type error");
+      else return x;
+    }
+
+When the compiler expects some operand `x` to be a number, it then
+emits `num(x)` instead of `x`, ensuring that non-numeric values
+will throw an exception and numeric values be treated normally. It'd
+be easy enough to simply drop the call to `num` for number literals, 
+or other values that the compiler could infer to be numbers, as an
+optimization.
+
+Furthermore, I extended the interpreter with `cond` (until now, it 
+only had `if`), for the simple reason that the mess of nested `if`s 
+in the compiler was becoming painful to look at. Since `cond` can 
+easily be expressed as a macro over `if`, I'll probably still
+implement it as a macro in the compiler, once I get around to
+implementing a macro system. For now, having `cond` in the interpreter
+makes the compiler considerably more succinct.
+
+Download
+========
+tar.gz: [merlin-0.0.5.tar.gz](files/merlin-0.0.5.tar.gz)  
+MD5: `a036f5d4b2ae0f5bb7ce75471d2b1855`  
+SHA256: `3d7bf6427dfd9b6b001a44ee95a029684a398d30ee37c2ef4d1159339e36ddb5`

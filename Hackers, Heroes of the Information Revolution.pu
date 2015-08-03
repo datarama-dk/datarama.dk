@@ -1,0 +1,77 @@
+%date 2014-07-27
+%rating 5
+%author Steven Levy
+
+Steven Levy's classic *Hackers* (which I read in its 2010 25th
+anniversary edition) is, first and foremost, a book that attempts to
+tell the tale of hacker culture and to recount how *hackers*, not big
+businesses or government institutions, were the main force in bringing
+the computer --- a technology born in war, *by* and *for* governments
+and big businesses --- to the general public. It is a story about
+technology, but even more so, it is a story about the *people* who
+dedicated themselves to that technology.
+
+Levy's primary thread through the story is the *Hacker Ethic*, the
+set of principles that make up the loosely-defined philosophy to which
+the hackers adhered:
+
+1. Access to computers, and anything that might teach you something
+   about the way the world works, should be unlimited and total.
+2. All information should be free.
+3. Mistrust authority; promote decentralization.
+4. Hackers should be judged by their hacking, not bogus criteria such
+   as degrees, age, race or position.
+5. You can create art and beauty on a computer.
+6. Computers can change your life for the better.
+
+The book relates four major stories, each from its own era of hacker
+history: The *true hackers* of the 50's and 60's, the *hardware
+hackers* of the 70's, the *game hackers* of the 80's --- and finally,
+the story of lonely [[Free as in Freedom|Richard Stallman]], the
+*last of the true hackers*. It follows some of the most glorious victories of
+hackerdom (ITS, Spacewar, Lisp, the Homebrew Computer Club) and some of its
+most ignominious defeats (the vaporware Tom Swift Terminal, the video game
+crash, the ill-fated Lisp Machines). 
+
+The hackers themselves are generally depicted sympathetically, without falling
+into the trap of idolizing them. Since these people have the status of cultural
+heroes in my particular walk of life, it seems oddly arrogant to say that I can
+recognize myself in many of them. I'm convinced that many of them were autistic
+(the utterly single-minded drive, the rigid structure, the complete disregard
+for the amenities of a "normal life", the self-absorption). Bob Saunders, who
+answers rhetorical questions with literal and brutal honesty; Lee Felsenstein,
+who perceived himself as the hero of a Heinleinian science fiction 
+story going on in his mind; John Harris, who doggedly stuck with his
+Atari 8-bit consoles a decade after their obsolescence.
+
+The material on the early 80's microcomputer boom turned me into a
+wretched mass of retrocomputing nostalgia, as I expected it would.
+These were things and people *I* remember. My mother was an early
+adopter, and I remember well those crazy afternoons in my childhood,
+spent on living the pure pleasure of getting my Commodore VIC-20 (and
+later, my C64) to do the things *I* wanted and on figuring out the
+intricacies of its machine language. I typed in listings of BASIC (and
+occasional machine code) gleaned from game magazines; back when
+*paper*, of all things, were the primary medium of game distribution.
+I'd figure out how games worked and introduce my own "improvements".
+In the 90's, I even had my own "my tribe has died" moment (making RMS'
+and John Harris' tales particularly poignant), when the Amiga demo
+scene (another hacker haven, which I am fairly certain would have had
+a part of its own if the book had been 10 years newer and written by
+an European) died down. I remember memorizing assembly mnemonics,
+learning (and coming up with) obscure machine tricks, all the sort of
+weird and crazy shit that takes dedication, caffeine and all-night
+hacking binges that Normal People just can't put into it. 
+
+I sometimes lament that Kids These Days don't really have anything
+like what I did with my C64 and my Amigas --- my first real contact
+with the world the hackers wrought --- but I guess they're laughing at
+me while hacking JavaScript. This book recounts the tale of how that
+came to pass.  Born in the MIT machine room, the hacker ethic fuelled
+the personal computer revolution that has now created a world where we
+can be virtually certain that as long as there are computers, new
+generations of curious, impassioned hyper-focused nerds will be
+hacking them. Try as they might, the vile ilk of modern-day Apple 
+(itself once a hacker haven) can make all the walled gardens they
+want to keep hackers from their machines, but that will --- in the end
+--- only make them go the way of IBM.

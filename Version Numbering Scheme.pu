@@ -1,0 +1,58 @@
+%date 2015-07-24
+
+My versioning scheme is broadly similar to the idea of
+[semantic versioning](http://semver.org/), although mine is intended
+for general software development rather than just APIs, and more
+closely reflects my personal software development philosophy. The
+scheme consists of a simple format and seven principles for using it.
+
+Versions are on the form `RELEASE.VERSION.REVISION[FIX]`, where
+`RELEASE`, `VERSION` and `REVISION` are integers, and `FIX` is an
+optional lower-case alphabetic sequence. 
+
+1. Version 0.0.0 is the *null program*. I won't usually bother 
+   releasing that, but here's a [reference implementation in Scheme](files/null.scm).
+2. Version 1.0.0 is a *finished program*. Most programs never become
+   finished.
+3. When improving a program by *adding a feature*, the `VERSION`
+   is incremented if the feature may break compatibility with older
+   versions. If the feature doesn't break compatibility, then the 
+   `REVISION` is incremented.
+4. When improving a program by fixing a bug or refactoring (without
+   adding any functionality), add or increment (by lexicographic
+   order) the `FIX` level.
+5. When incrementing a number, all less significant elements are 
+   reset to zero, eg. incrementing the `VERSION` of `0.4.12e` yields
+   `0.5.0`.
+6. If a version is on the form 0.0.x (x ≥ 1), the program
+   is considered *embryonic*. Embryonic programs are useless to the
+   public, and by this scheme they're thus considered
+   feature-equivalent to the null program. Early-stage development
+   is a succession of revisions to the null program until some 
+   improvement makes the program ready for public use. That marks
+   its first version.
+7. A program is considered *finished* if it has become
+   feature-complete, and either isn't intended to ever evolve
+   further, or has reached a point where further additions or
+   bugfixes are just as likely to make it worse as to make it
+   better. Such a program has its `RELEASE` incremented to 1, and no
+   further changes are made to it (except possibly bugfixes). Most
+   programs never become finished, and so they permanently are at
+   `RELEASE` 0. Examples of programs that can become finished
+   include minor hacks, audiovisual demos and some games.
+
+The scheme is intended for an open, rapid-improvement approach in
+the early stages, where changes are swift, arbitrary and
+apocalyptic, and where the program shouldn't be depended on for 
+anything. For more mature projects, it allows users to easily
+see whether a change may break compatibility (in which case 
+they might have to fix something), or merely adds a new feature (in 
+which case they can use the new revision with wild abandon).
+It includes the notion of a *finished program*, with the
+built-in proviso that many programs "naturally" never become
+finished. 
+
+I find that this scheme reflects my way of making software very
+well. It's probably absolutely useless for marketing, though; most
+realistic software produced with it will be permanently numbered at
+less than 1.0.0. 

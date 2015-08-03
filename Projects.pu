@@ -1,0 +1,12 @@
+%nodate
+%nodropcaps
+%endnote 
+
+This is where I put my collection of computational contraptions.
+Unless otherwise noted, all software on `datarama.dk` is under a [[Software License|permissive free software license]], 
+and I try to apply a consistent 
+[[Version Numbering Scheme|version numbering scheme]] to my projects.
+
+* [[Merlin]]: My very own Lisp implementation. Work in progress.
+* [[Plutonium]]: Static HTML generator with delusions of grandeur.
+* [[This Site|datarama.dk]]: This site, a small project in its own right.

@@ -1,0 +1,269 @@
+%date 2015-02-13
+%rating 2
+%endnote In the original script, Turing teams up with Indiana Jones and Captain America to defeat Hitler's zombie army.
+
+Alan Turing largely founded my academic field, and I've been 
+fascinated by him and his life ever since I first read about him 
+when I was in university. He lived an interesting if deeply tragic
+life, and his contributions to early computer science marks him as 
+one of its absolute intellectual giants, along with his Ph.D
+supervisor Alonzo Church. In 2015, I still teach some of his results,
+essentially unchanged, in one of my classes. He *also* worked as a
+codebreaker during World War II, and his efforts were instrumental in
+shortening the war and paving the way to the eventual Allied victory.
+
+All that, unfortunately, is only tangentially related to *The
+Imitation Game*, a quite compelling film about a lonely, autistic
+genius who heroically defies his small-minded leaders and colleagues
+to practically single-handedly break the Nazi cypher, and in the 
+process shows the world that sometimes, it is the people that nobody
+expects to accomplish anything who end up accomplishing things nobody
+could expect (a sympathetic self-empowerment mantra repeated by
+several characters in the film). Unfortunately, it purports to be
+a film about Alan Turing. This presents a *tiny* problem: When it
+claims to be "based on" true events, it seems to be in much the same
+way that *Asterix* was "based on" the Roman occupation of ancient Gaul.
+
+Opening & Framing
+=================
+The film opens with a routine police investigation, somewhen in 1951^[In actual history, the burglary (and police case) took place in 1952.]. Alan
+Turing's home has been burgled, and the police detectives find an
+uncooperative, antisocial eccentric (played by Benedict Cumberbatch) tinkering
+with cyanide in his makeshift home lab. One detective launches an investigation
+into Turing's background, on suspicion that he might be a Soviet spy. The
+secret Turing was *actually* hiding was his homosexuality (still a criminal
+offence in 1950s Britain) and the burglary was committed by a friend of one of
+his lovers, and he is brought in for questioning.  This provides the framing of
+the rest of the story: Turing recounts the story of his days in the Enigma
+codebreaking effort at wartime Bletchley Park to the police detective.
+
+This absurd framing device would have made him guilty of a crime that
+even the homophobic society of 1950s Britain would have considered a
+bit worse than being gay: *High treason*. The film even takes care to
+explain this to us: At two separate points in the film, MI-6 leader
+Stewart Menzies explains, in no uncertain terms, that revealing the
+events at Bletchley Park to *anyone* constitutes an act of high
+treason. The film *opens* by re-inventing Turing as a man who would
+casually commit high treason to save his own skin.
+
+The actual Turing was completely unashamed about his sexuality, and
+during the interrogation about the burglary, he [openly told the
+police himself](http://spartacus-educational.com/Alan_Turing.htm). He
+didn't particularly worry, since he was convinced that Parliament 
+was just about to legalize it. Unfortunately, his prediction was off
+by 16 years, and he was sentenced to chemical castration (as an 
+alternative to jail time): This, the film does get right. However, 
+the exact circumstances of his death in 1954 remain mysterious: He had
+been off his hormonal treatment for a year when he died, a year in
+which he had enthusiastically involved himself in scientific projects
+and (according to his mother and his friends) had showed no signs of
+depression. He didn't leave a suicide note, and theories about his
+death range from suicide or accident to assassination.
+
+Plot Summary
+============
+Flashback to 1941, where a slightly younger Turing is applying to 
+join the codebreaker effort at Bletchley Park. He is interviewed by
+the gruff, mathematically ignorant Commander Denniston (played by
+Charles Dance, a grandmaster of portraying thoroughly unpleasant
+individuals), and throughout the interview, he readily demonstrates
+his complete lack of understanding for, or patience with, basic social
+protocol. He comes across as a self-aggrandizing, condescending ass.
+Denniston, in turn, reveals himself to be a bureaucratic simpleton
+with no understanding of mathematics, logic or cryptology, and who
+fails to comprehend how Turing's radical and unheard-of idea of using
+a machine to defeat the Enigma machine could even work. Denniston is
+quickly established as the film's villain, the foil to Turing.
+
+I have to tip my hat to the originality of needing a villain like him
+in a film that already established that its villain is *Hitler*.
+
+Turing is nonetheless hired, and joins a small team of mathematicians,
+crosswords enthusiasts and chess masters tasked with cracking Enigma.
+Due to his poor social skills (he barely understands being invited to
+lunch, and doesn't understand humour), he is completely alienated from
+the team. His colleagues largely despise him, and view his idea of 
+building a computational device to crack Enigma as a very expensive
+fool's errand. Yet, he perseveres, and manages to convince Winston
+Churchill himself to promote him to team leader. He promptly fires
+the more hopeless members of the team, and comes up with a brilliant
+way to hire new members: A national crosswords competition, in which
+the winners then have to solve a logic puzzle version of the Star Trek
+*Kobayashi Maru* scenario: An impossible scenario concocted to see how
+the applicants will deal with certain failure. Enter Joan Clarke, a
+young, pretty, female applicant (played by Keira Knightley), who
+*solves* the problem, in record time, after having initially been 
+ridiculed by the misogynist goons of the intelligence service. Turing
+has her hired, to the disgust of his sexist leaders.
+
+She and Turing form a very warm friendship, and she takes it upon 
+herself to teach Turing the ways of human interaction. He brings 
+apples to his team and tells them jokes (poorly), trying to warm them
+up to him so as to improve team morale. However, the team's attempt to
+build a codebreaking machine (which Turing names "Christopher", after
+his deceased childhood love) meets with consistent and frustrating
+failure. This situation comes to a dramatic head when Denniston and 
+his goons show up to destroy Turing's machine and fire Turing, and we
+have a touching "Oh Captain, my Captain" moment when the entire team
+declares that if Denniston wants to fire Turing, he'll have to fire
+all of them too.
+
+Eventually, Turing and Clarke get engaged (largely to deal with
+Clarke's terrible petit-bourgeois parents wanting her to marry soon).
+Turing, who in most of the preceding social scenes of the film has
+come across as an entirely asexual Mr. Spock character, is tormented
+by the fact that he is not sexually attracted to her at all, and 
+seems to have homosexual inclinations. 
+
+After a long and frustrating string of failures, Turing finally hits
+upon the brilliant idea of *looking for known strings* in the
+encrypted messages (after listening to a story by a female Bletchley
+Park radio interception worker). Those silly Nazis are undone by their
+penchant for writing "Heil Hitler" in all their communication, right
+down to routine weather reports.
+
+But now, Turing and his team faces a worse conundrum: If they tell 
+military command that they have broken the code, then military command
+will make short work of the German U-boat attacks on the British trade
+fleet and Royal Navy, and then the Germans will know that their cypher
+has been compromised. Then they'll invent a new one, and the team will
+have to start all over. Thus, they have to decide which secrets to 
+keep, and which to pass on. They get embroiled in an MI-6 conspiracy
+to selectively inform government and military command about which 
+German attacks to foil and which to deliberately allow to succeed 
+(costing lives of British personnel). Eventually, the Nazis are 
+defeated, and Turing's team burns their notes and are sworn to
+secrecy.
+
+At this point, we flash-forward to Turing's interrogation and
+subsequent, grotesque punishment. He commits suicide off-camera, and
+the end credits informs us about the significance of his work --- 
+including how his "Turing Machines", having been studied by scientists
+for decades, are now called "computers".
+
+A Picking of Historical Nits
+============================
+All of that makes for a great, classic story: Socially disabled misfit
+genius, misunderstood by everybody, defies rigid-minded leadership and
+wins the war, almost single-handedly but for the aid from another
+oppressed and underestimated genius. Sympathetic messages against
+homophobia and misogyny. A mythic loner hero. Classic Hollywood story.
+
+Unfortunately, it *is* a Hollywood story.
+
+The actual Turing was nothing like the character shown in the story.
+Of all the many famous historical people who have been posthumously
+armchair-diagnosed with autism, he is one of the *less* convincing.
+Although he enjoyed working alone, he had many friends at Bletchley
+Park, most of whom described him as a charming man with a penchant for
+mischief and an excellent if unconventional, wry sense of humour. He
+was popular with children, and people liked to be around him. The film
+character was a rude, condescending asshole with less understanding of
+human relations than many *actual* autistic people. He is essentially
+a 1940s Mr. Spock.
+
+Furthermore, the historical Turing was the leader of his group at 
+Bletchley Park from its beginning, and the one time he petitioned
+Churchill over his commander's head, it was to be allocated *more*
+manpower, not to be empowered to fire his colleagues. The Enigma 
+effort was a highly collaborative one, and Turing's radical idea of
+building a machine to defeat Enigma was not only immediately accepted
+by the entire team, it was based on an already-existing design by
+Polish cryptanalysts. The machines were called *bombes*, a mutation of
+their Polish name ("cryptological bombs"). Bletchley Park, in fact,
+had *several* codebreaking machine efforts developed in parallel (the
+most famous being COLOSSUS, the world's first programmable digital
+computer, in which Turing wasn't directly involved). 
+
+During the film's turning-point *Eureka!* moment, Turing figures out
+that if they just look for known strings (like "Heil Hitler"), they 
+can defeat the code. The machines were designed to do just this from
+the outset, and it was a well-established tool of the cryptanalytic
+trade. In other words, the *Eureka!* moment was essentially equivalent
+to if a film about medieval warfare featured a pitched battle scene in
+which a knight runs up to his liege and exclaims "Sire! What if we
+used all these sharp iron implements we are carrying... to *hit people
+with*?" and everyone treating it as if he had just come across a
+revolutionary new idea that saves the day.
+
+Film-Turing (owing to his apparent half-Vulcan lineage) comes across
+as being mostly asexual, although we do see a romantic schoolboy crush
+with the Christopher who he eventually names a computing device after.
+He seems terribly confused about his sexuality. This is in stark
+contrast to the actual Turing, who enjoyed cruising the New York gay
+bar scene during his time in the US (where he completed his Ph.D), and
+whose favourite vacation spots were disreputable islands in the Greek
+archipelago.  Nearly everybody who worked with him knew he was gay,
+and during his brief engagement to Joan Clarke, he told her about his
+homosexuality *the day after* his proposal. She was unfazed by the
+revelation --- and in all likelihood, she already knew. 
+
+In other words, the film turned an empowered, vivacious, almost
+recklessly (given the historical era) openly gay man into a closeted,
+weak, mostly-asexual caricature. The historical Turing maintained a
+long line of lovers throughout his adult life. In contrast, our
+half-Vulcan hero's warmest personal relationship is with a woman ---
+who, at one point, has to explain the basics of courtship to him.
+
+The historical Joan Clarke wasn't hired due to demonstrating a
+superhuman knack for crossword puzzles --- she was a respected and
+competent mathematician, who was hired on recommendation by her former
+supervisor and professor, himself a Bletchley Park team member. She
+*was* a victim of sexism in that she was paid substantially less than
+her male colleagues for no other reason than her gender. It sort of 
+bugs me that Keira Knightley was cast in the role, not because I have
+anything against Keira Knightley, but because the historical Clarke
+was a heavyset, plain-looking woman, and I'd have enjoyed seeing a
+significant film heroine who *wasn't* petite, glamorous and
+conventionally pretty. Clarke's still-living niece
+[agrees](http://www.radiotimes.com/news/2013-11-19/benedict-cumberbatch-and-keira-knightleys-imitation-game-romance-labelled-inaccurate). 
+On the other hand, Benedict Cumberbatch doesn't look much like Alan
+Turing either.
+
+I mentioned that Film-Turing commits treason in the framing of the
+film, but that is actually the *second* time he does so. In one 
+low point of the film, he discovers a Soviet spy on the team, and in
+the ensuing confrontation, the spy blackmails him into silence with a
+threat of revealing his homosexuality, and he grudgingly keeps his 
+mouth shut (until discovered by MI-6). Not only would historical
+Turing most likely have been completely unfazed by that threat (as per
+his behaviour during the police interrogation), but the spy (John 
+Cairncross) and Turing worked on different teams and *never actually
+met*.
+
+The worst character treatment, however, is probably given to Alastair
+Denniston. The historical Denniston was an experienced cryptanalyst 
+who, at the time of the war, had about 20 years of cryptological work
+behind him. He co-founded the British cryptanalytic intelligence
+service, was married to a fellow cryptanalyst, and had taken part in 
+the early joint Polish-French-British work on Enigma. He knew about
+the *bombe* designs, and hired Turing specifically to build one. In
+the film, he is a bigoted ogre who wants to destroy Turing's machines
+and have him fired, probably because he has justifiable suspicion that
+Film-Turing is a half-extraterrestrial masquerading as an autistic
+man.
+
+Finally, the ending crawl mentioning that "Today, we know \[Turing
+Machines\] as computers" was toe-curlingly ignorant of what a Turing
+Machine is. It's a mathematical abstraction of a universal computation
+device, which makes for an excellent model to study the nature of 
+computation and complexity. It is *not*, in fact, a forerunner of
+actual computing devices, and *building* one is strictly intractable
+in a finite universe, given that it by definition has infinite memory.
+The principles underlying actual electronic computers were devised by
+[another eccentric genius who worked as a cryptanalyst during
+WWII](http://en.wikipedia.org/wiki/Claude_Shannon).
+
+Conclusion
+==========
+Viewed as a story about prejudice, ableism, sexism and homophobia, and
+about how marginalized figures in society may accomplish great deeds,
+*The Imitation Game* is a fine film. It tells that story well. 
+
+Viewed as an Alan Turing biopic, it's complete rubbish.
+
+Had it been a film about explicitly fictional characters, it would 
+have been excellent, if slightly on the ham-fisted side. Since it
+claims to be about *historical* people, it self-destructs by twisting
+its heroes (and self-invented villains) into caricatures that seem to
+be optimized for Oscar-fodder.

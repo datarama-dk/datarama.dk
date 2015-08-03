@@ -1,0 +1,58 @@
+%notitle
+%date 2015-07-15
+
+Merlin is a functional dynamic programming system in the Lisp
+family. It's designed and intended for a low-ceremony,
+refactoring-based, exploratory approach to writing software --- in
+other words, how I like to code. World domination wasn't a design
+goal; if your tastes in programming languages differ from mine, you have
+my sincerest condolences for your misfortune. Currently it's terribly
+immature; the implementation is in its early embryonic stages.
+
+**NOTE:** This page reflects the current state of the language. It is a
+work in progress, and these pages are subject to sudden and apocalyptic
+change with no notice.  
+
+Features
+========
+* *Language*
+    * Small, dynamically-typed λ-based core
+    * Full Unicode identifiers
+    * First-class functions
+    * Code is data
+* *Implementation*
+    * Simple (and very slow) interpreter written in Scheme
+    * [[Software License|Open Source]]
+
+Resources
+=========
+* [GitHub repository](https://github.com/datarama-dk/merlin)
+* [[Design Principles for Merlin]]
+* [[Inspirations for Merlin]]
+
+History & Revision Notes
+========================
+* [[Merlin 0.0.8|0.0.8]] -
+  Compiler: Improper lists eliminated
+  <span class="date">Aug 2015</span>
+* [[Merlin 0.0.7|0.0.7]] -
+  Compiler: List processing
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.6|0.0.6]] -
+  Compiler: Conditional expressions
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.5|0.0.5]] -
+  Compiler: Binary primitives
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.4|0.0.4]] -
+  Compiler: Unary primitives
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.3|0.0.3]] -
+  Compiler: Simple constants
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.2|0.0.2]] -
+  Compiler: Numbers
+  <span class="date">Jul 2015</span>
+* [[Merlin 0.0.1|0.0.1]] -
+  Scheme-based core interpreter
+  <span class="date">Jul 2015</span>

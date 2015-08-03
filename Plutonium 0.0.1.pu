@@ -1,0 +1,21 @@
+%title Plutonium 0.0.1
+%date 2015-07-22
+%subtitle Basic Functionality
+
+This revision implements the Plutonium core; a simple static 
+HTML generator for use with VimWiki. It uses Markdown-formatted
+pages, and features a simple metadata model to support things like
+page dates, ratings and authors in reviews, etc. It also supports
+bidirectional links, although currently those are a bit awkward.
+
+There's only very little support for user configuration --- in fact,
+apart from the SXML templates and the CSS files, there's *no* user
+configuration support beyond modifying the code. Fortunately, the
+code is rather simple, and it's not really *meant* for anything 
+other than running [[This Site|this site]] anyway. 
+
+Download
+========
+tar.gz: [plutonium-0.0.1.tar.gz](files/plutonium-0.0.1.tar.gz)  
+MD5: `4d7a5c99cd6bdac29926e941ac8d42ae`  
+SHA256: `307b4ef5281e6c26f5ba3550fde0146ffa6db7289c7301ed65ccfb83e9c3d4f7`

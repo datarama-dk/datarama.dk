@@ -1,0 +1,60 @@
+%date 2014-01-08
+%author John R. Allen
+%rating 4
+
+Let's get the obvious out of the way first: This book is *old*. It's far from
+up to date, it's long out of print, it concerns itself with outdated tech.
+
+It is, in fact, older than myself.
+
+The particular Lisp described is far removed from any modern Lisp. Whether you
+do your Lispery in Scheme, Common Lisp, Clojure or Arc, you'll find the
+particular Lisp anatomized here *very* different from what you're used to.
+There's no mention of continuations (delimited or otherwise), macro hygiene or
+object systems. The Lisp used has dynamic scope and fexprs, a combination we
+now know to have [unfortunate
+implications](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.44.9264).
+It uses M-notation throughout, only writing Lisp code out in S-expressions when
+it's clear that we're dealing with an intermediate form. I don't think any
+modern Lisp still uses M-notation (unless you count Logo or Dylan as Lisps). 
+
+However, it is also an *excellent* exposition of the essence of Lisp. It covers
+the fundamentals of symbolic computation (which is arguably the most central of
+all concepts in Lisp), recursion and induction, data structures, functional vs.
+imperative programming, basic λ-calculus, compilation and interpretation -
+including, of course, a metacircular interpreter for Lisp in Lisp (which book
+dealing with the implementation of Lisp can resist having one of those?).
+Unlike most later Lisp books I've read, it doesn't stop the implementation
+exposition there: It dives into the gory details of garbage collection
+(presenting both the classical McCarthy mark & sweep collector and a more
+efficient compacting one), assembly code generation and unstructured
+programming constructs. There are discussions on strict vs. lazy evaluation,
+static vs. dynamic scope, the funarg problem and the syntactic irregularities
+of Lisp (including dot notation and quote). There are even a few interesting
+examples of Lisp applications (including a backtracking tree search algorithm
+for playing board games and a simple pattern matching database query language).
+
+Whenever a new language concept is introduced, it is explained in terms of a
+suitable abstract data structure, implemented using algorithms with proper data
+abstraction (an early example demonstrates how data abstraction makes code
+clearer than the nest of `car` and `cdr` sometimes seen in pathological Lisp
+code, and the author then consistently heeds his own advice), and made a part
+of the language.
+
+It is, in other words, highly recommended if you're a Lisp nerd. It's
+especially recommended if you're also interested in *implementing* Lisp, but
+hey - probably the only language that might have a higher implementor-to-user
+ratio than Lisp might be Forth. Although it's old, it doesn't feel like a
+lesson in cyberarchaeology - getting hold of a copy these days might require
+some Indiana Jones-esque feats, though; it's been out of print for decades. 
+My copy was a gift from my late stepfather, acquired during a trip to the US.
+
+One superficial annoyance: The typography is *horrific*. My copy is set in a
+low-quality, anemic-looking smudgy rendition of Baskerville, printed on
+poor-quality paper. Legibility is poor enough to be a minor distraction (and
+not just the usual picking of nits you'd expect from an amateur typesetting
+nerd like me).
+
+It's still one of the best programming language books I've read, and has a
+deserved spot on the [ACM Classics](http://dl.acm.org/classics.cfm) list. Go 
+get a copy if you can, if you're in any way interested in Lisp.

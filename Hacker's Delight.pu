@@ -1,0 +1,64 @@
+%title Hacker's Delight
+%date 2013-12-29
+%rating 5
+%author Hank Warren
+
+*Hacker's Delight* is possibly the coolest very-narrow-subject-matter book I
+own - and it's not about the subject matter you might think it's about.
+Although I did find my copy on a shelf at my old university bookstore otherwise
+stocked with books about Internet security, there's not a single root exploit,
+shell injection or stack smash to be found here.
+
+This is, in fact, a book about computer arithmetic. 
+
+It's full of the kind of clever, old-school, low-level bit-slinging tricks that
+Responsible Adults working in Robust Enterprise Languages scoff at, and then
+proceed to have nightmares about when the lights go out. It's a grimoire of
+deep magic from a bygone era, from long before "don't be clever" became a
+software engineering mantra. The author developed these tricks (sometimes in
+collaboration with other hackers) over several decades of assembler hacking on
+a variety of old and new machines. Many of them originated as [hacker
+folklore](http://www.inwap.com/pdp10/hbaker/hakmem/hakmem.html), circulated
+samizdat-style in the hacker underground of 1970s academia.
+
+Code examples are mostly in ISO C (or simply in algebraic expressions), with a
+few in a three-address assembly language for an imaginary RISC architecture not
+too unlike actual computer architectures. The math tends towards the informal,
+mostly omitting proofs of the techniques.
+
+The book starts with simple tricks of binary arithmetic (eg.  checking if a
+number is a power of two by doing `x & (x-1) == 0` (just three machine
+instructions on most computers)) and works its way up to subjects like boundary
+checking, population counts, square roots and Hilbert curves, all using
+fiendishly clever low-level bit-slinging tricks. There's two whole chapters
+dedicated to explaining the gory mess that is computer division, and why it
+tends to be a terribly inefficient operation on most hardware. Most of the book
+deals with integer arithmetic, but it also has a chapter full of tricks 
+for IEEE 754 floating-point numbers. There's even a chapter dedicated to exotic
+number bases, with a brief treatment of hypothetical computer arithmetic for
+architectures that use base -2 (yes, that's *negative two*) or base -1+*i*
+(yes, that's *i* = √-1). How cool is *that*?
+
+However, with a very narrow subject comes a very narrow audience.  
+
+There's not much here for Respectable Professionals writing e-commerce
+solutions in a Managed Robust Enterprise Language, nor is there, in fact, much
+for people who want to circumvent the security of said e-commerce solutions.
+Modern applications are typically bottlenecked by I/O rather than number
+crunching, and have little to gain from being able to shave off a few
+instructions when doing very specific integer divisions - and most modern
+hardware is both so fast and so complicated that many old-school bit-slinging
+tricks are of limited utility.
+
+There's basically two kinds of people who are likely to enjoy *Hacker's
+Delight*: Those who are fascinated by the fiendish cleverness of the tricks in
+their own right, and those who have *very* special needs (eg. people who are
+writing optimizing compilers or developing software on slow, weird embedded
+devices). Fortunately for me, I'm in both groups.
+
+In fact, the aforementioned chapter on exotic number bases serves as a useful
+litmus test of whether you'd enjoy *Hacker's Delight*. The sensible reaction to
+a chapter on base -1+*i* computer arithmetic, I suppose, would be "*Why?!*". If
+you can answer "because that's *awesome*!" or "because I can probably adapt
+it to use with my embedded Bogotron 9000's three-state electronics",
+then you'll probably like *Hacker's Delight*. 

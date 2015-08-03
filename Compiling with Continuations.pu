@@ -1,0 +1,87 @@
+%date 2014-08-27
+%author Andrew Appel
+%rating 4
+
+After having spent some years out of print, Andrew Appel's 1992 classic
+*Compiling with Continuations* entered reprint in 2007. I got my grubby hands
+on it in 2010, but didn't get around to reading it until this summer. I have
+a too big [tsundoku pile](http://www.openculture.com/2014/07/tsundoku-should-enter-the-english-language.html).
+
+It's pretty much the definitive work on continuation-passing style, along
+with [Guy Steele's master's
+thesis](ftp://publications.ai.mit.edu/ai-publications/pdf/AITR-474.pdf) and
+[David Kranz's PhD
+thesis](http://repository.readscheme.org/ftp/papers/orbit-thesis.pdf), both
+of which deal with Scheme implementations -- the latter of which was about
+Orbit, once the most efficient compiler for *any* language. 
+
+I *really* like CPS as an intermediate notation, to the degree that I made
+several explicitly CPS languages when I was at university --- languages that
+I intended to *program in*, not just spit out of a compiler. In retrospect, 
+that was probably one of my more ill-advised ideas --- but on the plus side,
+when later life circumstances landed me in my short-lived Web development 
+career, I found the bizarre, contorted inside-out logic of AJAX code downright
+homey and familiar. 
+
+I suppose that's when I actually *realized* how ill-advised those ideas were.
+
+However, as bad as CPS-like programming styles are for *human* programmers,
+they're [quite fantastic for
+compilers](http://matt.might.net/articles/cps-conversion/), and (at least for
+me), they're *more* readable than some other intermediate representations, 
+such as three-address code or SSA. Everything gets converted to function
+calls, the function call stack gets blasted into a million jumps and stores,
+and a relatively simple trick makes it possible for the compiler to
+selectively reconstruct the call stack where it makes sense to do so (and
+leave it out where it can be dispensed with). Lots of optimizations are
+feasible on CPS-transformed code.
+
+The book centers on ML, because Appel was one of the main authors of SML/NJ,
+but it's certainly also useful for people tinkering on compilers for Lisp or
+other functional languages as well. Although it's somewhat dated (it was
+originally printed in 1992, which is a *long* time ago in the field of
+compiler optimization), it's still a *really* good book. It first introduces
+CPS and the particular ML core it focuses on (which is essentially just an 
+SML variant stripped of syntactic sugar), then it describes a CPS conversion
+algorithm and then proceeds to dive into optimization techniques. Nearly a 
+third of the book is concerned with optimization techniques, before it gets 
+around to code generation. The code generation material is, unfortunately,
+*completely* out of date now -- unless you're writing an optimizing compiler
+for a VAX, Motorola 68020 or a SPARC, in which case *welcome to my humble
+internet page, Time Traveller, can I convince you to meddle with history so
+that I get to do my work on a badass futuristic Amiga?* Finally, the book
+gives some benchmark results to demonstrate the effects of the various
+optimizations, which (expectedly) vary *widely* in their effectiveness. 
+
+There's no treatment of the compiler front end at all --- no material on 
+parsing, lexing or type checking. I much appreciated this omission; great 
+treatments are available in nearly every mainstream compiler textbook, and 
+since these are all things that happen *before* CPS conversion, there'd be no
+point in involving them here.
+
+There is, however, a little stuff about garbage collection and parallelism,
+which unfortunately felt like padding. It was rather superficial, speculative
+in some parts, and could have been left out without making the book worse for
+it.  Appel has written
+[better](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.8219&rep=rep1&type=pdf)
+[GC](https://www.cs.ucsb.edu/~ckrintz/racelab/gc/papers/appel88simplegen.pdf)
+[stuff](http://drhanson.s3.amazonaws.com/storage/documents/tr-162-88.pdf) in
+his research papers, and this book's treatment of the subject was so thin that
+I'd probably have had a *better* reading experience if it was just left out.
+
+The writing is great, as I've come to expect from Appel. He has a gift for
+taking a rather arcane subject matter and making it understandable --- he
+consistently pulls off similar feats in his research papers, and the other
+textbook of his I've read (the [green tiger
+book](http://www.cs.princeton.edu/~appel/modern/c/)) is similarly
+well-written. Probably the only CS authors whose work I *enjoy* as much (from
+a purely writing-based perspective) are Gerry Sussman, Hal Abelson, Andrew
+Tanenbaum and Don Knuth.
+
+Highly recommended. 
+
+As an aside, while CPS has languished in obscurity for a decade and a half,
+hackers are starting to write CPS-based compilers once again. In January 2014,
+Guile (the GNU Scheme implementation) grew itself a [badass CPS
+IR](http://wingolog.org/archives/2014/01/12/a-continuation-passing-style-intermediate-language-for-guile),
+courtesy of Alex Wingo.

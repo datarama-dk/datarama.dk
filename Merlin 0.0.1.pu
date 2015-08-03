@@ -1,0 +1,49 @@
+%title Merlin 0.0.1
+%date 2015-07-22
+%subtitle Core Language Interpreter
+
+This release implements the Merlin core, a small functional language
+based on s-expressions. The language is dynamically typed,
+statically scoped, purely functional and features strict evaluation.
+The current core provides:
+
+* Lists
+* Atoms (symbols and numbers)
+* Primitive functions (<pfun>s)
+* User-defined functions (<ufun>s)
+* A basic quotation mechanism
+* A small collection of special forms: define, if, let, and, or, let, λ
+
+It's implemented as a simple interpreter, written in
+[Gauche](http://practical-scheme.net/gauche/) Scheme. The only 
+purpose of this interpreter is to host the development of the 
+(JavaScript-targeted) compiler that is to become the main
+implementation. I wanted to have a simple (but inefficient and 
+stripped-down) implementation ready as quickly as possible, so I 
+could do further Merlin implementation in Merlin itself.
+
+My idea for a process for bootstrapping this thing (inspired in part
+by Abdulaziz Ghuloum's
+[work](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf) with Ikarus
+Scheme) is as follows.
+
+1. Implement a reference interpreter for the core in Scheme (you're looking at it).
+2. To implement a compiler:
+    1. Select a source Merlin subset.
+    2. Write a collection of test cases for the subset.
+    3. Write a compiler that compiles expressions in this subset to
+       JavaScript.  
+       This compiler runs using the Scheme-based interpreter core.
+    4. Test the compiler using the test cases.
+    5. Refactor the compiler if necessary.
+    6. If the compiler covers full Merlin, rejoice!   
+       Otherwise, recursively implement a larger subset using this
+       procedure.
+3. Once the compiler can compile itself, discard the Scheme-based
+   interpreter.
+
+Download
+========
+tar.gz: [merlin-0.0.1.tar.gz](files/merlin-0.0.1.tar.gz)  
+MD5: `1bd5e67e94d22cd7a1751aafd69f1c1f`  
+SHA256: `273b509cabc7d315203d587560ba636c4aadc9592b7ac35e29f04eb459955aaa`
