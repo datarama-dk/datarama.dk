@@ -1,3 +1,4 @@
+%title Site Colophon
 %date 2015-07-14
 
 Datarama is unapologetically Web 1.0: The pages are all static HTML,
@@ -15,6 +16,11 @@ to link and navigate my source pages. Internal links are bidirectional,
 so that each page has a "Related Pages" sidebar section with all pages
 that link to it. The HTML is generated using [[Plutonium]], a
 Scheme-based custom static HTML generator I wrote for the purpose. 
+
+The entire source (including Markdown-formatted Plutonium files, 
+CSS, fonts, SXML templates and image originals) used to generate the
+site is 
+[available on GitHub](https://github.com/datarama-dk/datarama.dk).
 
 Visual Design & Typography
 ==========================
@@ -52,3 +58,12 @@ Everybody loves W3C standards! All these pages should be valid
 [CSS3](https://jigsaw.w3.org/css-validator/validator?uri=datarama.dk&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en).
 If you find something that doesn't validate, or that looks wonky in 
 your browser, please [let me know](mailto:skongshoj@gmail.com).
+
+Copyright & Licensing
+=====================
+Unless otherwise noted, text and media files on `datarama.dk` is
+licensed under a [[Content License|Creative Commons license]].
+Computer programs are mostly 
+under [[Software License|another license]], 
+and the fonts (which weren't made by me) are all under the [SIL Open
+Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).

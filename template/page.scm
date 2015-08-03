@@ -38,5 +38,8 @@
          (a (@ (href "mailto:skongshoj@gmail.com"))
             "Written by Simon Kongshøj") 
          " · "
+         (a (@ (href "Content%20License.html"))
+            "CC-BY-4.0")
+         " · "
          (a (@ (href "Plutonium.html"))
             "Powered by Plutonium"))))
