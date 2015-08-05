@@ -1,6 +1,6 @@
 %title Merlin 0.0.8
 %date 2015-08-01
-%subtitle A Farewell to Improper Lists
+%subtitle Improper lists eliminated
 
 This revision extirpates improper lists from the language. Reflecting
 on [[Merlin 0.0.7|yesterday's revision notes]]: I think improper
