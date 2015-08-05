@@ -1,0 +1,40 @@
+%title Merlin 0.0.10
+%date 2015-08-05
+%subtitle λ-Expressions
+
+This revision expands on the basic funcall interface with full
+λ-expressions. As such, functions are first-class values (with the
+`function?` type predicate), and can be passed as parameters to other
+functions. Putting a λ-expression in the operator position allows
+one-shot functions, the pattern JavaScript programmers usually call
+[IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/)s
+(Immediately-Invoked Function Expressions), often used as macro
+output in Lisp. A Merlin λ has the familiar Lisp notation, and can be
+written with either the keyword `lambda` or the Greek letter `λ`. I
+might later make a more concise notation for unary λ-expressions,
+which are very heavily used in Lisp programs.
+
+Apart from toplevel definitions (which aren't currently implemented
+in the compiler), Merlin λ-expressions are the only name-binding
+construct in the language, and this neatly elides one of the common
+JavaScript pitfalls: Function scoping. Both Merlin and JavaScript are
+statically scoped, but since JavaScript also allows local definitions
+inside functions (whereas Merlin requires creating an inner
+function, possibly using a macro), the scope rules can create
+confusing results for people used to block scoping, with variables
+persisting outside their apparent blocks. Given that Merlin `let`
+will be implemented as a simple macro over `λ`, Scheme-like static
+block scoping follows *automatically*.
+
+The compiler environment has been extended to provide a stack-based
+frame model, to keep track of identifiers introduced by
+λ-expressions.
+
+A current weakness is that the primitive functions (`pfun`s) aren't
+first-class. This will be addressed in a later revision.
+
+Download
+========
+tar.gz: [merlin-0.0.10.tar.gz](files/merlin-0.0.10.tar.gz)  
+MD5: `3c7eae5e05ef6a680e84237302495145`  
+SHA256: `f64e982b029cd04e9fa3b2ca0ce668d6eb98aaa2a63c7b7b184d723f87f3feb4`

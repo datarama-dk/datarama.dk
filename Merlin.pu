@@ -32,6 +32,9 @@ Resources
 
 History & Revision Notes
 ========================
+* [[Merlin 0.0.10|0.0.10]] -
+  Compiler: λ-expressions
+  <span class="date">Aug 2015</span>
 * [[Merlin 0.0.9|0.0.9]] -
   Compiler: Named function calls
   <span class="date">Aug 2015</span>
