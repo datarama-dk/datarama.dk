@@ -1,0 +1,28 @@
+%title Merlin 0.0.12
+%date 2015-08-08
+%subtitle Symbols
+
+In this revision, the compiler is extended with support for
+*symbols*, using the classic Lisp `quote` form. This only implements
+quotation for symbols; quoted lists aren't supported yet. The symbol
+type is one of the distinctive features of Lisp, and it has no real
+analogue in JavaScript.
+
+The implementation is quite simple (and not terribly efficient): 
+Quoted symbols are compiled into calls to the function `q_sym` in the
+runtime. This uses a symbol table (mapping strings to integers) to
+keep track of known symbols. Two symbols that have the same string
+representation thus map to the same integer. These integers are 
+then wrapped in a type-tagged object. It's rather clunky, and I'm 
+sure I can do better once I get around to making an optimizing 
+Merlin compiler.
+
+But for now, the primary purpose remains to get the compiler to a 
+point where it can compile itself --- optimizations and some of the
+more interesting extensions to the core language come after that.
+
+Download
+========
+tar.gz: [merlin-0.0.12.tar.gz](files/merlin-0.0.12.tar.gz)  
+MD5: `74132160aab64764b162b450e3d011ff`  
+SHA256: `34361aa24526af28b9eef5e8eb7ea8d0f2949a673dd978133d95379c5cd753a9`

@@ -32,6 +32,9 @@ Resources
 
 History & Revision Notes
 ========================
+* [[Merlin 0.0.12|0.0.12]] -
+  Compiler: Symbols
+  <span class="date">Aug 2015</span>
 * [[Merlin 0.0.11|0.0.11]] -
   Compiler: Lisp-1 namespace semantics
   <span class="date">Aug 2015</span>
