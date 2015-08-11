@@ -17,12 +17,6 @@ code and twist it to your own foul ends if you want. Provided, of course,
 that you can read Scheme and that your foul ends can be served by a
 rather simple static HTML generator.
 
-Resources
-=========
-* [GitHub repository](https://github.com/datarama-dk/plutonium)
-
-History & Revision Notes
+Download
 ========
-* [[Plutonium 0.0.1|0.0.1]] -
-  Initial version
-  <span class="date">Jul 2015</span>
+* [Development Release](https://github.com/datarama-dk/plutonium) (GitHub)

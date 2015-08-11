@@ -1,17 +1,23 @@
 %notitle
-%date 2015-07-15
+%date 2015-08-12
 
 Merlin is a functional dynamic programming system in the Lisp
 family. It's designed and intended for a low-ceremony,
-refactoring-based, exploratory approach to writing software --- in
-other words, how I like to code. World domination wasn't a design
-goal; if your tastes in programming languages differ from mine, you have
-my sincerest condolences for your misfortune. Currently it's terribly
-immature; the implementation is in its early embryonic stages.
+refactoring-based, exploratory approach to writing software. World
+domination wasn't a design goal; if your tastes in programming
+languages differ from mine, you have my sincerest condolences for
+your misfortune. The implementation is in its early embryonic
+stages.
 
-**NOTE:** This page reflects the current state of the language. It is a
-work in progress, and these pages are subject to sudden and apocalyptic
-change with no notice.  
+**NOTE:** This page reflects the current state of the language. It
+is a work in progress, and these pages are subject to sudden and
+apocalyptic change with no notice.  
+
+Download & Resources
+====================
+* [Development Release](https://github.com/datarama-dk/merlin) 
+  (GitHub)
+* [[Inspirations for Merlin]]
 
 Features
 ========
@@ -22,54 +28,4 @@ Features
     * Code is data
 * *Implementation*
     * Simple (and very slow) interpreter written in Scheme
-    * [[Software License|Open Source]]
-
-Resources
-=========
-* [GitHub repository](https://github.com/datarama-dk/merlin)
-[[*]] [[Inspirations for Merlin]]
-
-History & Revision Notes
-========================
-* [[Merlin 0.0.14|0.0.14]] -
-  Compiler: List Quotations
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.13|0.0.13]] -
-  Compiler: S-Expression Reader
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.12|0.0.12]] -
-  Compiler: Symbols
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.11|0.0.11]] -
-  Compiler: Lisp-1 namespace semantics
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.10|0.0.10]] -
-  Compiler: λ-expressions
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.9|0.0.9]] -
-  Compiler: Named function calls
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.8|0.0.8]] -
-  Compiler: Improper lists eliminated
-  <span class="date">Aug 2015</span>
-* [[Merlin 0.0.7|0.0.7]] -
-  Compiler: List processing
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.6|0.0.6]] -
-  Compiler: Conditional expressions
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.5|0.0.5]] -
-  Compiler: Binary primitives
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.4|0.0.4]] -
-  Compiler: Unary primitives
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.3|0.0.3]] -
-  Compiler: Simple constants
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.2|0.0.2]] -
-  Compiler: Numbers
-  <span class="date">Jul 2015</span>
-* [[Merlin 0.0.1|0.0.1]] -
-  Scheme-based core interpreter
-  <span class="date">Jul 2015</span>
+    * [[Software License|Permissive free software license]]

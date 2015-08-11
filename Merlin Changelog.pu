@@ -1,0 +1,55 @@
+%title Changelog for Merlin
+%nodate
+
+## 2015-08-11
+- Added list quotation
+- Switched to normal CHANGELOG.md; removed redundant files
+- Added lexer
+- Added parser
+
+## 2015-08-08
+- Added `quote` for symbols
+
+## 2015-08-05
+- Simplified funcall semantics
+- Added first-class primitive functions
+- Added single function/variable namespace
+- Added first-class user-defined functions
+- Added function? type predicate
+- Extended environment for function-introduced symbol tracking
+
+## 2015-08-04
+- Added rudimentary environment
+- Added `function-call` emitter
+- Removed `unary-primitive?` and `binary-primitive?` recognizers
+- Replaced all operator emitters with funcalls
+
+## 2015-08-01
+- Removed improper lists (by adding a type check to the `cdr`
+  position of `cons`)
+
+## 2015-07-31
+- Added list operators (cons, car, cdr)
+
+## 2015-07-27
+- Added `if` expression
+
+## 2015-07-26
+- Added binary versions of arithmetic, logical and comparison
+  operators
+- Added inline type predicates in runtime
+- Added `cond` to interpreter
+
+## 2015-07-24
+- Added unary type checks, conversions and negations
+- Created runtime
+- Added strings
+- Added nil
+
+## 2015-07-23
+- Created first version of compiler
+- Added numbers to compiler
+- Added strings to interpreter
+
+## 2015-07-22
+- Created interpreter
