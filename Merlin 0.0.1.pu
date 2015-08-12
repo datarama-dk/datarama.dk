@@ -9,8 +9,8 @@ The current core provides:
 
 * Lists
 * Atoms (symbols and numbers)
-* Primitive functions (<pfun>s)
-* User-defined functions (<ufun>s)
+* Primitive functions (`pfun`s)
+* User-defined functions (`ufun`s)
 * A basic quotation mechanism
 * A small collection of special forms: define, if, let, and, or, let, λ
 
@@ -20,27 +20,10 @@ purpose of this interpreter is to host the development of the
 (JavaScript-targeted) compiler that is to become the main
 implementation. I wanted to have a simple (but inefficient and 
 stripped-down) implementation ready as quickly as possible, so I 
-could do further Merlin implementation in Merlin itself.
+could do the rest of the Merlin implementation in Merlin itself.
 
-My idea for a process for bootstrapping this thing (inspired in part
-by Abdulaziz Ghuloum's
-[work](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf) with Ikarus
-Scheme) is as follows.
-
-1. Implement a reference interpreter for the core in Scheme (you're looking at it).
-2. To implement a compiler:
-    1. Select a source Merlin subset.
-    2. Write a collection of test cases for the subset.
-    3. Write a compiler that compiles expressions in this subset to
-       JavaScript.  
-       This compiler runs using the Scheme-based interpreter core.
-    4. Test the compiler using the test cases.
-    5. Refactor the compiler if necessary.
-    6. If the compiler covers full Merlin, rejoice!   
-       Otherwise, recursively implement a larger subset using this
-       procedure.
-3. Once the compiler can compile itself, discard the Scheme-based
-   interpreter.
+In other words, this is a throwaway interpreter. Don't expect much
+from it.
 
 Download
 ========

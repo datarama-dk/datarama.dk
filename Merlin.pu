@@ -15,6 +15,7 @@ apocalyptic change with no notice.
 
 Download & Resources
 ====================
+* [[Merlin 0.0.1|Stable Prerelease]] (0.0.1)
 * [Development Release](https://github.com/datarama-dk/merlin) 
   (GitHub)
 * [[Inspirations for Merlin]]
@@ -29,3 +30,9 @@ Features
 * *Implementation*
     * Simple (and very slow) interpreter written in Scheme
     * [[Software License|Permissive free software license]]
+
+Revision History
+================
+* [[Merlin 0.0.1|0.0.1]] -
+Core Language Interpreter
+<span class="date">JUL 2015</span>
