@@ -1,63 +1,37 @@
 %title Merlin 0.0.2
-%date 2015-07-24
-%subtitle Numbers
+%date 2015-08-18
+%subtitle Self-Hosting Compiler
 
-This revision adds the beginnings of the necessary infrastructure to
-create the Merlin compiler.
+With this release, the Merlin compiler can now compile itself,
+and the Scheme-based interpreter has been discarded. The rest of
+the language development will be done in Merlin itself.
 
-The *interpreter* is extended with rudimentary *string support* and
-*input argument handling*. Strings are simply snarfed from the
-underlying Scheme implementation, and the only operation they
-currently support is string concatenation (I'll grow a better string
-implementation once I need it, or once I get to supporting string
-operations in the compiled version). 
+The compiler only compiles a small core language; the bare 
+minimum required to build a self-hosting compiler. There's still
+lots of work to be done with it. 
 
-I have introduced the concept of a "main function" (called `run` in
-Merlin), which takes as its single parameter the (possibly empty)
-list of all command-line arguments. These are interpreted as
-S-expressions rather than as bare strings (by passing them through 
-Scheme's `read` before sending them on to Merlin); this might change
-in the future. For now it seems like a win; it makes it much easier
-to throw expressions at the compiler prototype from the command
-line. I might switch to using strings once I want the compiler to
-accept filenames too.
+* The language still lacks several important features:
+    * Variadic functions
+    * Quasiquotation
+    * Macros
+    * Modules
+* The language is purely sequential, and has no interaction story.
+* The compiler performs no optimizations. I'm planning a
+  CPS-based optimization phase for a later releaase.
+* Tail calls aren't optimized. Any long-running recursion, even
+  a tail-recursive one, will memory leak and crash.
+* The backend has no real model of JavaScript, it just blindly
+  bangs strings together.
+* The runtime is an absolute mess.
+* Neither compiler nor runtime produce useful error messages.
+* The runtime is entirely focused on `node.js`, and isn't browser-friendly.
 
-Furthermore, I've written a *test framework* in Scheme, which takes
-tests on the following form: 
-    
-    (test-section "NUMBERS"
-      (test-case 42 "42")
-      (test-case 3.1415 "3.1415")
-      (test-case "foo" 'error)
-      ...)
-
-Each test case runs an expression through the compiler, evaluates
-them using `node.js`, and compares the result to the given
-expectation. It has some crude support for error checking: If the
-compiler exits with a nonzero return val (as `error` in Merlin
-will), the test case is considered equal to the symbol `error`. Test
-sections have a heading and an individual `X tests, Y failed` in the
-generated test report.
-
-Compiler progress
-=================
-The simplest sublanguage of Merlin that it makes sense to compile is
-the language consisting solely of numbers. I'm representing Merlin
-numbers as IEEE-754 double-precision floating-point numbers (similar
-to languages like Lua, JavaScript and ActionScript), so a "compiler"
-that turns a Merlin number into a JavaScript number is so trivial
-that it's only worthy of the name in the most contrived sense.
-
-I originally had the compiler output a file with the necessary
-`node.js` boilerplate code for making a module that can be loaded
-with `require`, but decided to initially drop that idea in favour of
-just producing JavaScript expressions that can be passed to
-`node.js` with the `-e` parameter. This makes testing easier for the
-time being, although it's certain that I'll need a more structured
-output later.
+But all those things are for a succession of future releases. 
+For now, I celebrate.
 
 Download
 ========
-tar.gz: [merlin-0.0.2.tar.gz](files/merlin-0.0.2.tar.gz)   
-MD5: `4266782f5ba702ab56428d7d6eb8c9dd`  
-SHA256: `2d51a9720b0af4a68ac11ca89263f1c990a139175cf553e71139703c32add0c1`
+tar.gz: [merlin-0.0.2.tar.gz](files/merlin-0.0.2.tar.gz)  
+MD5: `ce85f3fc62a40074df64199d8ed774a9`  
+SHA256: `9374a76158558ed1ea0b9fb17965eaa918703c1c4e919c9e935297b0ca80cfed`
+
