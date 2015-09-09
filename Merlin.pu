@@ -1,5 +1,5 @@
 %notitle
-%date 2015-08-12
+%nodate
 
 Merlin is a functional dynamic programming system in the Lisp
 family. It's designed and intended for a low-ceremony,
@@ -15,7 +15,7 @@ apocalyptic change with no notice.
 
 Download & Resources
 ====================
-* [[Merlin 0.0.2|Stable Prerelease]] (0.0.2)
+* [[Merlin 0.0.3|Stable Prerelease]] (0.0.3)
 * [Development Release](https://github.com/datarama-dk/merlin) 
   (GitHub)
 * [[Inspirations for Merlin]]
@@ -26,6 +26,9 @@ Features
     * Small, dynamically-typed λ-based core
     * Full Unicode identifiers
     * First-class functions
+    * Pattern matching
+    * Variadic functions
+    * Quasiquotation
     * Code is data
 * *Implementation*
     * Self-hosting compiler
@@ -34,6 +37,9 @@ Features
 
 Revision History
 ================
+* [[Merlin 0.0.3|0.0.3]] -
+Pattern Matching, Quasiquote & more
+<span class="date">SEP 2015</span>
 * [[Merlin 0.0.2|0.0.2]] -
 Self-Hosting Compiler
 <span class="date">AUG 2015</span>

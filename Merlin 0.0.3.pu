@@ -1,34 +1,83 @@
 %title Merlin 0.0.3
-%date 2015-07-25
-%subtitle Simple Constants
+%date 2015-09-09
+%subtitle Pattern Matching, Quasiquote & More
 
-Aside from the numbers, Merlin has many types of values. A few
-of them have straightforward translations to JavaScript, and this
-revision focuses on adding them. I call them *simple constants* for
-the purpose of the compiler; they're simple by the definition that
-their data representations doesn't need any support beyond the 
-corresponding ones of the target JS implementation.
+This revision focuses on improving expressiveness. It introduces a pattern
+matching primitive, along with a little collection of classic features no
+self-respecting Lisp should be without. However, the compiler still produces
+unoptimized JavaScript, and still has nothing even resembling a real UI.
 
-The *nil value* (which, in Merlin, can be written as the empty 
-list `()` or, synonymously, as the symbol ⊥) is arguably the
-simplest of all values in the language. The only operation defined
-on it is comparison. It serves as a list terminator (as in most 
-Lisps), and is the only value that is considered Boolean false --- like
-Arc, but unlike Scheme.  It's easily translated to JS `null`.
+Variadic Functions
+------------------
+One of the distinctive characteristics of Lisp is the pervasive use of 
+variadic functions - that is, functions that can accept an indefinite number
+of arguments. In fact, pervasive variadism is one of the main benefits of 
+the fully parenthesized prefix notation used in Lisp.
 
-Strings (introduced in the 0.0.2 interpreter), are also trivially
-translated to JS.
+Different Lisp dialects have many different notations for defining variadic
+functions. In Merlin, a function is considered variadic if its last formal
+parameter is suffixed with ellipses (`...`). For example, here's a rather 
+useless variadic function:
 
-Given all the hacking I used to do on twiddling bits for dynamic 
-type representation, this almost feels like cheating. I'm sure that
-when things start getting more interesting and I have to start 
-working around JS' demented type system, I'll miss those days of
-bithacking and NaN-encoding tricks (and perhaps I'll need to do
-something of the sort again if I end up making an optimizing version
-of the compiler that spits out [asm.js](http://www.asmjs.org/)). 
+    (: (add/list a b...)
+       (map (λ (x) (+ a x)) b))
+
+    (add/list 10 1 2 3 4 5)
+
+This should yield the list `(11 12 13 14 15)`.
+
+A useful utility function when working with variadic functions is the Lisp
+`apply` function, which applies some function to an arbitrary list of 
+arguments. This operator has also been introduced in this revision.
+
+Letrec
+------
+The `let` construct in Merlin is simple syntactic sugar over a λ-expression,
+and doesn't allow defining recursive functions. To allow functions to define
+internal utility functions, this revision adds the `letrec` primitive, which
+(apart from having the operator `letrec` rather than `let`) has similar 
+syntax to `let`. As an example: 
+
+    (letrec ((fac (λ (n) (if (= n 0) 1 (* n (fac (- n 1)))))))
+      (fac 10))
+
+The `letrec` primitive also supports mutual recursion.
+
+Quasiquotation
+--------------
+As a convenient means of constructing lists with a mixture of static and 
+dynamic content, `quasiquote` has been introduced, similar to its Scheme
+counterpart. It has the usual *backtick* reader shortcut, and supports 
+both *unquote* and *unquote-splicing*.
+
+    (let ((x 2))
+      `(1 2 3 ,(+ 2 x) 5))
+
+Currently, the quasiquote expander emits atrociously inefficient (but
+correct) code.
+
+Pattern Matching
+----------------
+Finally, this release introduces a pattern matcher, making it possible to
+pick apart lists and bind their constituent parts to names in a concise way.
+The matcher uses a `match` special form; a later version may integrate 
+pattern matching into functions (similar to functional languages like ML, 
+Erlang or Haskell).
+
+Lists of indefinite lengths can be matched using a similar syntax as in
+variadic functions; simply suffixing the final symbol in a list with `...` 
+will cause that symbol to match the rest of the list after that position.
+There's a wildcard symbol, `_`, which matches anything and binds nothing.
+Here's an example: 
+
+    (match (· 1 2 3 4 5)
+      ((· x xs...) (cons 6 xs))
+      (_ (error "Argh!")))
+
+This should produce the list `(6 2 3 4 5)`.
 
 Download
 ========
 tar.gz: [merlin-0.0.3.tar.gz](files/merlin-0.0.3.tar.gz)  
-MD5: `e15f9217fdee01fa3273d41c451b89b7`  
-SHA256: `ac85405ccf6353cf9b412a804b808fa92e4618453c8f507d677967f3180a636d`
+MD5: `4091019ad7841d3c0517979d9990054b`  
+SHA256: `f2f259d2a690705297add0866024dece613169154f3d99884f5fae0cacd1a68c`
