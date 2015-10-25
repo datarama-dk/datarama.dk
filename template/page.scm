@@ -33,6 +33,8 @@
         (%data title)
         (%data subtitle)
         (%data content)
+        (div (@ (id "categories"))
+          (%data category))
         (div (@ (id "breaker")) &nbsp\;)))
     (div (@ (id "bottommatter"))
          (a (@ (href "mailto:skongshoj@gmail.com"))

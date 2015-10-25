@@ -1,0 +1,7 @@
+%cdesc Computational contraptions
+%nodate
+%nodropcaps
+%endnote 
+
+* [[Merlin]]: My very own Lisp implementation. Work in progress.
+* [[Plutonium]]: Static HTML generator with delusions of grandeur.

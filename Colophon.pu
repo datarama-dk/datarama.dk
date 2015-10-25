@@ -1,82 +1,69 @@
 %nodate 
+%date 2015-07-14
 
-Datarama is unapologetically Web 1.0. The pages are all static HTML, there
-are no ads, no social media integration and no commenting system. This is
-deliberate. If you didn't know any better, you'd almost think this was
-somebody's personal homepage, not a community blog.
+Datarama is unapologetically Web 1.0: The pages are all static HTML,
+there are [[Datarama Ad Policy|no ads]], 
+[[On Social Media Widgets|no social media integration]] widgets and 
+[[No Comments|no commenting system]]. This is deliberate.
 
-For a personal site, I honestly can't figure out why anybody would ever want
-to use anything *but* static HTML. I'm the only author. Even at my most manic
-caffeine-fueled writing binges, I don't exactly produce content at a rate that
-requires a fancy, massively parallelism-friendly relational database. To me,
-generating pages when I've updated something, as opposed to doing so *on every
-single page request* not only seems like the obviously correct solution, it
-also handily takes care of the increasingly anachronistically named [Slashdot
-effect](http://en.wikipedia.org/wiki/Slashdot_effect).
+It's basically my public notebook, or "static wiki" if you will. Pages
+get revised if and when I'm not happy with them, although I try to avoid
+renaming URLs whenever possible --- doing so contributes directly to
+link rot, and hence to the sum misery of the Universe. I write the pages
+using [Vim](http://www.vim.org/), using the excellent
+[Vimwiki](http://www.vim.org/scripts/script.php?script_id=2226) plugin
+to link and navigate my source pages. Internal links are bidirectional,
+so that each page has a "Related Pages" sidebar section with all pages
+that link to it. The HTML is generated using [[Plutonium]], a
+Scheme-based custom static HTML generator I wrote for the purpose. 
 
-I don't expect nor intend to make any money from my site, so there are no ads
-here. I earn what money I need from my day job (which I happen to enjoy very
-much as well), so I have the fortunate privilege of running my website without
-renting out space for sinister companies and scam artists to litter with an
-assortment of unsightly electronic turds that [everybody blocks
-anyway](http://www.getadblock.com/).
+The entire source (including Markdown-formatted Plutonium files, 
+CSS, fonts, SXML templates and image originals) used to generate the
+site is 
+[available on GitHub](https://github.com/datarama-dk/datarama.dk).
 
-If you want to share my pages on your favourite social network, by all means
-feel free to do so! However, there are no social media integration widgets
-here, so you're going to have to go through the ritual of copying
-an URL and pasting it. There are two reasons for this: I have no need for
-tracking whether various strangers on social media appreciate my stuff, and
-I have *even less* need of providing tracking data about my visitors' reading
-habits to companies like Facebook and Google.
+Visual Design & Typography
+==========================
+All the graphics and layout was done by me. I must hasten to note that
+I'm not a graphic designer, nor do I play one on TV.
 
-I have no comment system, because having a comment system turns any website
-into a discussion forum, and I have no particular desire to be a forum admin.
-In fact, I have a strong desire *not* to be one. Furthermore, comment systems
-invariably attract the attention of two particular types of entities that I
-want to minimize my dealings with: Assholes, and robots trying to sell
-penis enlargement potions.
+I based the current design on the basic idea of a mad scientist's lab
+notes. The idea first came from the works of artist 
+[Justin Amrhein](http://www.justinamrhein.com/), combined with my 
+lifelong love of Golden Age science fiction and its latter-day
+offspring, diesel- and atompunk -- this is also the origin of the
+*Datarama* site title^[The title might also pay tribute to my favourite animated show.] and the logo. I've come to enjoy this design, and I
+find that it reflects my personality and my preferred tone well --- in
+fact, I ended up making a Linux desktop theme based on it.  The graph
+paper in the background uses a base-8 system: I remain convinced that in
+a sane world, we'd be counting in octal rather than decimal.
 
-My current visual design is based on the basic idea of a mad scientist's lab
-notebook, and was originally largely inspired by the works of artist [Justin
-Amrhein](http://www.justinamrhein.com/), combined with my lifelong love of
-Golden Age science fiction (which would often prominently feature mad
-scientists as both heroes and villains). I find that this largely reflects my
-personality and my preferred tone. 
+I use three fonts here: Body text is set in [[Epicure]], a slightly
+modified version of [Linux Libertine](http://www.linuxlibertine.org/),
+sidebar headings are set in
+[Voltaire](http://www.fontsquirrel.com/fonts/voltaire), and code is set
+in [Inconsolata
+Hellenic](https://github.com/cosmix/Inconsolata-Hellenic) (I sometimes
+use Greek letters in some of my more mathematically oriented code). All
+are heavily subsetted to keep bandwidth demand low, and they were chosen
+specifically to fit well with the retro-modernist visual theme.
 
-This is also why the front page features some self-appointed nonsense titles;
-I figured that a dash of ludicrous grandiosity would be very fitting for that
-theme. In case you're wondering, a *planetary cosmonaut* is someone who
-travels space on board a planet, an *oxyglot* (literally "acid-speaker"/"acid
-tongue") is someone prone to sarcastic or surreal speech, and a *paramath* is
-to a mathematician as a paramedic is to a medical doctor.
+The logo is an SVG image made in [Inkscape](https://inkscape.org/), and
+the background paper textures are JPGs made in [GIMP](http://gimp.org/).
 
-Software
-========
- * [[Plutonium]]
- * [Vim](http://www.vim.org/)
- * [Scheme](http://www.schemers.org/) (specifically [Chicken](http://call-cc.org/)).
- * [Markdown](https://daringfireball.net/projects/markdown/)
- * [Ubuntu](http://www.ubuntu.com/)
- * [lighttpd](http://www.lighttpd.net/)
+Web Standards
+=============
+Everybody loves W3C standards! All these pages should be valid
+[HTML5](https://html5.validator.nu/?doc=http://datarama.dk) and
+[CSS3](https://jigsaw.w3.org/css-validator/validator?uri=datarama.dk&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en).
+If you find something that doesn't validate, or that looks wonky in 
+your browser, please [let me know](mailto:skongshoj@gmail.com).
 
-The HTML rendering engine, Plutonium, was written by me and is custom-designed
-for this site. Feel free to use it if you'd like; it's free software. In fact,
-as you can see, *all* software involved here is free software.
-
-Typography
-==========
- * [Linux Libertine](http://www.linuxlibertine.org/)
- * [Voltaire](http://www.fontsquirrel.com/fonts/voltaire)
- * [Ubuntu Mono](http://font.ubuntu.com/)
-
-Fonts were chosen to fit the vaguely Golden Age of Science Fiction
-(1920s-1950s) retro-futuristic visual theme, even though all three of them are
-actually new designs. Libertine (used for body text) is a transitional serif
-face in the basic spirit of Baskerville, Century Schoolbook and Times, and
-looks much like what you might find in an older science textbook -- or,
-indeed, a science fiction novel. Voltaire is a modernist geometric sans-serif,
-and I find it works really well for the menu headings. Ubuntu Mono is a
-monospace font used for code examples --- I originally wanted to use
-something more typewriterish, but I could find no good free typewriter font
-that supported the range of Unicode I need (I use Greek characters and
-mathematical symbols in some of my code).
+Copyright & Licensing
+=====================
+Unless otherwise noted, text and media files on `datarama.dk` is
+licensed under a [[Content License|Creative Commons license]].
+Computer programs are mostly 
+under [[Software License|another license]], 
+and the fonts (which weren't made by me) are all under the [SIL Open
+Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).

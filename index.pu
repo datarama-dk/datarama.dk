@@ -1,28 +1,17 @@
+%category [[Code]], [[Notebook]], [[Meta]]
 %title datarama.dk
 %notitle
 %nodate
 %meta The computational contraptions, procrastinatorium and opinionarium of Simon Kongshøj.
-%sidebar activity links
+%sidebar nav links
 
 Greetings, gentlebeings! Live from the frozen wastes of Denmark, this 
 is *Datarama*, the website of Simon Kongshøj --- computer
 scientist, bass player, compulsive tinkerer, serial enthusiast,
 oxyglot & paramath.  
 
-**Current Obsessions:** The [[Merlin]] compiler implementation.
+<h1><span>Latest Emissions</span></h1>
+%RECENT
 
 ___
-
-* [[Projects]] or, *computational contraptions*
-* [[Book Reviews]] or, *dead tree eulogies*
-* [[Film & TV Reviews]] or, *rage against the screen*
-* [[Fiction]] or, *meanderings in nonexistent worlds*
-* [[Miscellanea]] or, *my garbage collection*
-* [[Danish Pages]] or, *probably not of interest to anglophones*
-* [[Personal]] or, *self-absorbed nonsense*
-
-<div id="archive_link">
-  <a href="archive.html">Archives</a>
-</div>
-
 
