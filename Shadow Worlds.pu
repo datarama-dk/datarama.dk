@@ -1,0 +1,82 @@
+%date 2015-10-28
+%category [[Notebook]]
+
+I'd like to share a concept I've found useful when thinking
+about programming language design: *Shadow worlds*. The
+term was coined by [Gilad Bracha](http://www.bracha.org/) 
+during an [*Onward*
+talk](http://www.infoq.com/presentations/past-present-future-programming),
+and subsequently expanded upon in a [blog
+post](http://gbracha.blogspot.dk/2014/09/a-domain-of-shadows.html)
+of his, in the context of domain-specific languages.
+
+One of the things that makes extensible languages in the
+tradition of Lisp or Forth^[In a more modern context, both Haskell and Bracha's own language Newspeak have a similar pattern.] so
+enjoyable to program in is the way they encourage
+programmers to invent domain-specific mini-languages
+tailored to some problem domain. If you're writing a game, 
+you'd write it in a game-oriented minilanguage rather than
+in raw Lisp. Critical to this pattern is the fact that such
+*internal* DSLs may have access to all the mechanisms of
+the host languages: They can have functions, abstraction,
+modular composition, control flow mechanisms, objects or
+whatnot. In contrast, *external* DSLs --- domain-specific
+languages running on some standalone interpreter or
+compiler, some examples being the venerable Make and most
+Web templating systems --- typically either lack such
+high-level language facilities entirely, or have
+half-assed, severely restricted versions of them. This
+universe of restricted, awkward language features is what
+Bracha terms a "shadow world".
+
+Shadow world constructs can also enter general-purpose
+programming languages. This happens when some language
+mechanism is useful enough that we'd like to use it
+programmatically, but for whatever reason we choose to not
+make it a first-class value. The canonical example (used by
+Bracha in both the talk and the post) is module systems: 
+In many programming languages (such as Scheme, Haskell and
+Standard ML), modules are second-class values. However,
+because they're such a useful structuring mechanism, we 
+often want to do various kinds of computation with them. 
+And thus, we have to invent an entire "shadow language" of
+modules, with shadow records (modules), shadow types
+(signatures), shadow `if` (conditional linking) and shadow
+functions (functors), all with restricted semantics
+compared to their ordinary counterparts. In fact, when I
+was developing the [[Merlin]] module system, I was
+initially headed down a similar path --- I realized that
+when I found myself reimplementing half of `λ` in a
+parametrization mechanism.
+
+Shadow world constructs have insidious effects on the rest of
+the language design. If you have a second-class construct
+(say, macros), then everything that works on those must 
+also be second-class: If modules can contain macros, and
+macros are second-class, then modules must themselves be
+second-class. Anything that operates on modules must then
+also be second-class, and so forth. This bifurcates the
+language into one ordinary language of functions and values,
+and another of macros and modules -- and the interactions
+between these two languages may be [highly
+non-intuitive](http://calculist.blogspot.dk/2009/01/fexprs-in-scheme.html).
+
+The reason people invent shadow worlds isn't that anybody
+considers them particularly desirable --- it's because the
+alternative may be worse. First-class constructs are usually
+more powerful than second-class ones, but with great power
+comes great undecidability. In statically typed languages,
+first-class modules require dependent types (the
+[Cayenne](https://en.wikipedia.org/wiki/Cayenne_(programming_language))
+language implements a first-class module system based on
+dependent types), which results in undecidable type
+inference. 
+
+For a dynamically typed language, I think it makes sense to
+attempt to avoid shadow-world constructs whenever possible 
+--- in fact, that's one of the design opportunities dynamic
+typing gives us.  Second-class constructs should be tolerated
+only on things we don't even *want* to do general-purpose
+computation on.
+
+This, I think, leads to more consistent languages.
